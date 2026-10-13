@@ -58,7 +58,7 @@ export default function SolutionsExplorer() {
       <div className="sxp">
         {solutions.map((x, k) => (
           <div className={'sxi' + (k === cur ? ' on' : '')} role="tabpanel" id={'sxp' + k} aria-labelledby={'sxt' + k} key={x.title}>
-            <img src={x.image} alt="" />
+            <img loading="lazy" decoding="async" src={x.image} alt="" />
             {x.tags.map((s, j) => (
               <span className={'fch fc' + j} key={s}>
                 <em dangerouslySetInnerHTML={{ __html: chipIcons[j] }} />

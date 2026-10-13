@@ -4,24 +4,26 @@ import { notFound } from 'next/navigation'
 import projects from '@/content/projects.json'
 import ProjectGallery from '@/components/ProjectGallery'
 
-type Props = { params: { slug: string } }
+type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }))
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const p = projects.find((x) => x.slug === params.slug)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const p = projects.find((x) => x.slug === slug)
   return { title: p ? `${p.title} | Knock-IT Solution & Service` : 'Project' }
 }
 
-export default function ProjectPage({ params }: Props) {
-  const p = projects.find((x) => x.slug === params.slug)
+export default async function ProjectPage({ params }: Props) {
+  const { slug } = await params
+  const p = projects.find((x) => x.slug === slug)
   if (!p) notFound()
   return (
     <section className="pg on" data-p={`project-${p.slug}`}>
       <div className="ph">
-        <img className="bg" src={p.heroImage} alt="" />
+        <img fetchPriority="high" className="bg" src={p.heroImage} alt="" />
         <div className="w">
           <Link className="pbk" href="/projects">&#8592; <span>All projects</span></Link>
           <div className="eb">Project</div>

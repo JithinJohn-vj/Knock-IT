@@ -5,7 +5,7 @@ export default function Partners() {
     <div className="pns rv" id="pn2">
       {partners.map((p) => (
         <div className="pn" key={p.name}>
-          {p.logo ? <img src={p.logo} alt={p.name} /> : <b>{p.name}</b>}
+          {p.logo ? <img loading="lazy" decoding="async" src={p.logo} alt={p.name} /> : <b>{p.name}</b>}
           <span>{p.level}</span>
         </div>
       ))}

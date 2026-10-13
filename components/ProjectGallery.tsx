@@ -17,6 +17,14 @@ export default function ProjectGallery({ photos, title }: { photos: Photo[]; tit
 
   const go = useCallback((x: number) => setI(((x % n) + n) % n), [n])
 
+  // Lazy-load photos: only slides within 2 of the current one (wrapping) get their
+  // image; once loaded a slide keeps it, so browsing back never re-fetches.
+  const near = useCallback((c: number) => [-2, -1, 0, 1, 2].map((d) => (((c + d) % n) + n) % n), [n])
+  const [seen, setSeen] = useState(() => new Set(near(0)))
+  useEffect(() => {
+    setSeen((s) => (near(i).every((k) => s.has(k)) ? s : new Set([...s, ...near(i)])))
+  }, [i, near])
+
   useEffect(() => {
     if (matchMedia('(prefers-reduced-motion:reduce)').matches) setPlaying(false)
   }, [])
@@ -96,8 +104,12 @@ export default function ProjectGallery({ photos, title }: { photos: Photo[]; tit
         <div className="cft" ref={track}>
           {photos.map((p, k) => (
             <div className={'cfs' + (k === i ? ' on' : '')} key={p.image} onClick={() => !moved.current && go(k)}>
-              <i style={{ backgroundImage: `url(${p.image})` }}></i>
-              <img src={p.image} alt={p.title} draggable={false} />
+              {seen.has(k) && (
+                <>
+                  <i style={{ backgroundImage: `url(${p.image})` }}></i>
+                  <img src={p.image} alt={p.title} draggable={false} decoding="async" />
+                </>
+              )}
             </div>
           ))}
         </div>

@@ -6,7 +6,7 @@ export const metadata: Metadata = {"title": "IT solutions and services | Knock-I
 export default function Page() {
   return (
     <>
-<section className="pg on" data-p="solutions"><div className="ph"><img className="bg" src="/images/net.jpg" alt="" /><div className="w"><div className="eb">Solutions</div><h1>IT solutions and services</h1><p className="lead">Twelve services covering infrastructure, email, security and consultancy.</p></div></div>
+<section className="pg on" data-p="solutions"><div className="ph"><img fetchPriority="high" className="bg" src="/images/net.jpg" alt="" /><div className="w"><div className="eb">Solutions</div><h1>IT solutions and services</h1><p className="lead">Twelve services covering infrastructure, email, security and consultancy.</p></div></div>
 <div className="sec"><div className="w"><ServicesExplorer /></div></div></section>
     </>
   )

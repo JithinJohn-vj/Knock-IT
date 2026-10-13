@@ -44,7 +44,7 @@ function Inner({ containerDetails }: { containerDetails: ReactNode }) {
   return (
     <>
       <div className="ph">
-        <img className="bg" src={images.phero} alt="" />
+        <img fetchPriority="high" className="bg" src={images.phero} alt="" />
         <div className="w">
           <div className="eb">Products</div>
           <h1>Products</h1>
@@ -70,7 +70,7 @@ function Inner({ containerDetails }: { containerDetails: ReactNode }) {
                   const go = () => (isCt ? (pick('ct'), scrollTabs()) : openCat(idx))
                   return (
                     <div key={c.name} className="pk go" tabIndex={0} role="link" aria-label={'View items: ' + c.name} onClick={go} onKeyDown={(e) => e.key === 'Enter' && go()}>
-                      <img className={fc(c.image)} src={c.image} alt={c.name} />
+                      <img loading="lazy" decoding="async" className={fc(c.image)} src={c.image} alt={c.name} />
                       <h3>{c.name}</h3>
                       <ul>{c.items.map((i) => <li key={i.name}>{i.name}</li>)}</ul>
                       <span className="vd">{isCt ? 'View details →' : 'View items →'}</span>
@@ -86,7 +86,7 @@ function Inner({ containerDetails }: { containerDetails: ReactNode }) {
             <div id="pdv">
               <a className="bkl" href="/products" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setOpen(null) }}>← Back to all products</a>
               <div className="pdt">
-                <img className={fc(p.image)} src={p.image} alt={p.name} />
+                <img loading="lazy" decoding="async" className={fc(p.image)} src={p.image} alt={p.name} />
                 <div>
                   <div className="eb">Products</div>
                   <h2>{p.name}</h2>
@@ -98,7 +98,7 @@ function Inner({ containerDetails }: { containerDetails: ReactNode }) {
                   const on = has(it.name)
                   return (
                     <div className="pk it" key={it.name}>
-                      <img className={fc(it.image)} src={it.image} alt={it.name} />
+                      <img loading="lazy" decoding="async" className={fc(it.image)} src={it.image} alt={it.name} />
                       <h3>{it.name}</h3>
                       <button className={'ad' + (on ? ' on' : '')} type="button" onClick={() => toggle(it.name)}>{on ? 'Added ✓ Remove' : 'Add to quote'}</button>
                     </div>

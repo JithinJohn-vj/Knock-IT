@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   return (
     <section className="pg on" data-p="projects">
       <div className="ph">
-        <img className="bg" src={projects[0].heroImage} alt="" />
+        <img fetchPriority="high" className="bg" src={projects[0].heroImage} alt="" />
         <div className="w">
           <div className="eb">Projects</div>
           <h1>Our projects</h1>
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
             {projects.map((p) => (
               <Link key={p.slug} className="pcc" href={`/projects/${p.slug}`}>
                 <div className="pci">
-                  <img src={p.cardImage} alt={p.title} />
+                  <img loading="lazy" decoding="async" src={p.cardImage} alt={p.title} />
                   <span className="pct">{p.tag}</span>
                 </div>
                 <div className="pcb">

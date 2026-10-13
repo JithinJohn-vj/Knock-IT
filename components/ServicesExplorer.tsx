@@ -49,7 +49,7 @@ function Inner() {
           .filter((s) => k === 'all' || s.category === k)
           .map((s) => (
             <div className={'cd' + (hl.includes(s.title) ? ' hl' : '')} key={s.title}>
-              <div className="pi"><img src={s.image} alt="" /></div>
+              <div className="pi"><img loading="lazy" decoding="async" src={s.image} alt="" /></div>
               <div className="ic"><svg className="i"><use href={'#' + s.icon} /></svg></div>
               <h3>{s.title}</h3>
               <p>{s.text}</p>

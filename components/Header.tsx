@@ -45,7 +45,7 @@ export default function Header() {
     <header id="hd" className={scrolled ? 's' : ''}>
       <div className="w h">
         <Link className="lg" href="/" aria-label="Knock-IT Solution and Service, home">
-          <img className="lgi" src={images.logoD} alt="Knock-IT Solution & Service" />
+          <img fetchPriority="high" className="lgi" src={images.logoD} alt="Knock-IT Solution & Service" />
         </Link>
         <nav className="nv" id="nv">
           {site.nav.map((n) => (
