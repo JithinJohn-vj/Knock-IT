@@ -1,6 +1,6 @@
 # Knock-IT Solution & Service: Next.js website
 
-Next.js 14 (App Router, TypeScript). All copy that changes lives in `content/`, and all images are real files in `public/images/`.
+Next.js 15 (App Router, TypeScript). All copy that changes lives in `content/`, and all images are real files in `public/images/`.
 
 ## Run
 
@@ -9,6 +9,29 @@ npm install
 npm run dev      # http://localhost:3000
 npm run build && npm start
 ```
+
+## Deploy on Hostinger (Next.js / Node.js web app hosting)
+
+1. hPanel -> **Websites -> Add Website -> Node.js app**, then import this GitHub repo (or upload a zip without `node_modules` and `.next`).
+2. Build settings: Node.js **20.x or 22.x**, build command `npm run build`, start command `npm start`.
+3. Deploy. Hostinger provides the SSL certificate; keep HTTPS on, the site sends HSTS.
+
+Security headers come from `next.config.mjs` and rate limiting from `middleware.ts`, both active automatically. Optional environment variables (hPanel app settings):
+
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `RATE_LIMIT_MAX` | `300` | Requests allowed per IP per window (pages and data, not images) |
+| `RATE_LIMIT_WINDOW_MS` | `60000` | Window length in ms |
+| `RATE_LIMIT_IP_HEADER` | unset | Header the host's proxy fills with the real visitor IP |
+| `RATE_LIMIT_PROXY_HOPS` | unset | Number of proxies appending to `X-Forwarded-For` |
+| `RATE_LIMIT_DEBUG` | unset | `1` adds an `X-Debug-Client-IP` response header for checking the above |
+
+**After the first deploy, check visitor-IP detection:** set `RATE_LIMIT_DEBUG=1`, redeploy, open the site and look at the `X-Debug-Client-IP` response header (browser DevTools -> Network -> the page request). Compare it with your own public IP (search "what is my ip"):
+- If `x-real-ip` (or `cf-connecting-ip`) shows your IP, set `RATE_LIMIT_IP_HEADER` to that header name.
+- Otherwise, if your IP is in `x-forwarded-for` followed by N proxy addresses, set `RATE_LIMIT_PROXY_HOPS` to N + 1.
+- If `used=` shows `unknown` or a Hostinger/proxy address instead of yours, fix this before going live: every visitor would share one limit.
+
+Then remove `RATE_LIMIT_DEBUG`. Counts are kept in memory, so they reset on restart and assume a single app instance.
 
 ## Where things live
 

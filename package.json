@@ -2,6 +2,9 @@
   "name": "knock-it-website",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18.18"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

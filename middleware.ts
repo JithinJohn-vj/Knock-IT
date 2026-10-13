@@ -10,10 +10,28 @@ const MAX_TRACKED_IPS = 10_000
 
 const hits = new Map<string, { count: number; reset: number }>()
 
+// How to find the visitor's IP behind the host's proxy (e.g. Hostinger):
+// - RATE_LIMIT_IP_HEADER: read this header, if the proxy overwrites it with the
+//   real client IP (e.g. x-real-ip or cf-connecting-ip).
+// - RATE_LIMIT_PROXY_HOPS: number of proxies that append to X-Forwarded-For; the
+//   entry that many places from the right is the client (anything further left can
+//   be forged by the client).
+// - Neither set: leftmost X-Forwarded-For entry. Never lumps real visitors
+//   together, but a client can forge it to dodge the limit.
+// RATE_LIMIT_DEBUG=1 echoes what was seen in an X-Debug-Client-IP response header,
+// to check the setup after deploying; turn it off afterwards.
+const IP_HEADER = process.env.RATE_LIMIT_IP_HEADER?.toLowerCase()
+const PROXY_HOPS = Number(process.env.RATE_LIMIT_PROXY_HOPS) || 0
+const DEBUG = process.env.RATE_LIMIT_DEBUG === '1'
+
 function clientIp(req: NextRequest) {
-  // Only trustworthy when the app sits behind a proxy that sets these headers.
-  const fwd = req.headers.get('x-forwarded-for')
-  return fwd?.split(',')[0].trim() || req.headers.get('x-real-ip') || 'unknown'
+  if (IP_HEADER) {
+    const v = req.headers.get(IP_HEADER)?.split(',')[0].trim()
+    if (v) return v
+  }
+  const fwd = (req.headers.get('x-forwarded-for') ?? '').split(',').map((x) => x.trim()).filter(Boolean)
+  if (PROXY_HOPS > 0 && fwd.length) return fwd[Math.max(0, fwd.length - PROXY_HOPS)]
+  return fwd[0] || req.headers.get('x-real-ip') || 'unknown'
 }
 
 function prune(now: number) {
@@ -54,6 +72,10 @@ export function middleware(req: NextRequest) {
   res.headers.set('RateLimit-Limit', String(MAX_REQUESTS))
   res.headers.set('RateLimit-Remaining', String(remaining))
   res.headers.set('RateLimit-Reset', String(resetSec))
+  if (DEBUG) {
+    const h = req.headers
+    res.headers.set('X-Debug-Client-IP', `used=${ip}; x-forwarded-for=${h.get('x-forwarded-for')}; x-real-ip=${h.get('x-real-ip')}; cf-connecting-ip=${h.get('cf-connecting-ip')}`)
+  }
   return res
 }
 
