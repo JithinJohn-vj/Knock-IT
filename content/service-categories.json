@@ -1,0 +1,22 @@
+[
+ {
+  "id": "all",
+  "label": "All services"
+ },
+ {
+  "id": "inf",
+  "label": "Infrastructure"
+ },
+ {
+  "id": "mail",
+  "label": "Email and servers"
+ },
+ {
+  "id": "sec",
+  "label": "Security and monitoring"
+ },
+ {
+  "id": "con",
+  "label": "Consulting and communication"
+ }
+]

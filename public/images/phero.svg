@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="660" viewBox="0 0 1920 660">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0" stop-color="#050f29"/>
+      <stop offset="0.5" stop-color="#0a2260"/>
+      <stop offset="1" stop-color="#0d3591"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#2d7bff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2d7bff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#050f29" stop-opacity="0.95"/>
+      <stop offset="0.42" stop-color="#050f29" stop-opacity="0.55"/>
+      <stop offset="0.58" stop-color="#050f29" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d8bff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#3d8bff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16408f"/>
+      <stop offset="1" stop-color="#0c2864"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2a6e"/>
+      <stop offset="1" stop-color="#123f9c"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#5d9cff" fill-opacity="0.18"/>
+    </pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1920" height="660" fill="url(#bg)"/>
+  <rect width="1920" height="660" fill="url(#dots)"/>
+  <rect width="1920" height="660" fill="url(#glow)"/>
+
+  <!-- circuit traces -->
+  <g fill="none" stroke="#4d8dff" stroke-opacity="0.22" stroke-width="2">
+    <path d="M760 80 H980 L1020 120 H1440"/>
+    <path d="M820 620 H1000 L1040 590 H1180"/>
+    <path d="M1700 40 V70 L1740 100"/>
+    <path d="M900 300 H960 L990 270 H1060"/>
+  </g>
+  <g fill="#4d8dff" fill-opacity="0.4">
+    <circle cx="760" cy="80" r="4"/><circle cx="820" cy="620" r="4"/><circle cx="900" cy="300" r="4"/>
+  </g>
+
+  <!-- floor -->
+  <rect x="940" y="560" width="980" height="100" fill="url(#floor)"/>
+  <line x1="940" y1="560" x2="1920" y2="560" stroke="#5d9cff" stroke-opacity="0.5" stroke-width="2"/>
+  <g stroke="#5d9cff" stroke-opacity="0.12">
+    <line x1="1100" y1="560" x2="1000" y2="660"/><line x1="1300" y1="560" x2="1260" y2="660"/>
+    <line x1="1500" y1="560" x2="1520" y2="660"/><line x1="1700" y1="560" x2="1780" y2="660"/>
+    <line x1="940" y1="600" x2="1920" y2="600"/>
+  </g>
+
+  <!-- network connections -->
+  <g fill="none" stroke="#f5c518" stroke-width="2" stroke-dasharray="6 8" stroke-opacity="0.75">
+    <path d="M1080 490 C1080 380, 1300 140, 1480 150"/>
+    <path d="M1660 160 C1700 160, 1720 170, 1760 175"/>
+    <path d="M1660 470 C1690 470, 1700 455, 1720 450"/>
+  </g>
+
+  <!-- ROUTER -->
+  <g>
+    <line x1="1020" y1="500" x2="1005" y2="430" stroke="#7fb2ff" stroke-width="5" stroke-linecap="round"/>
+    <line x1="1080" y1="500" x2="1080" y2="420" stroke="#7fb2ff" stroke-width="5" stroke-linecap="round"/>
+    <line x1="1140" y1="500" x2="1155" y2="430" stroke="#7fb2ff" stroke-width="5" stroke-linecap="round"/>
+    <rect x="990" y="496" width="180" height="64" rx="12" fill="url(#panel)" stroke="#5d9cff" stroke-width="2"/>
+    <g fill="#3de0a0"><circle cx="1015" cy="528" r="4"/><circle cx="1032" cy="528" r="4"/><circle cx="1049" cy="528" r="4"/></g>
+    <circle cx="1066" cy="528" r="4" fill="#f5c518"/>
+    <g fill="#081c47"><rect x="1090" y="520" width="16" height="14" rx="2"/><rect x="1112" y="520" width="16" height="14" rx="2"/><rect x="1134" y="520" width="16" height="14" rx="2"/></g>
+    <g fill="none" stroke="#f5c518" stroke-width="3" stroke-linecap="round" opacity="0.9">
+      <path d="M1062 404 a26 26 0 0 1 36 0"/><path d="M1052 392 a40 40 0 0 1 56 0"/>
+    </g>
+  </g>
+
+  <!-- MONITOR -->
+  <g>
+    <rect x="1190" y="206" width="270" height="190" rx="10" fill="#0a1f52" stroke="#6aa6ff" stroke-width="3"/>
+    <rect x="1202" y="218" width="246" height="160" rx="4" fill="url(#screen)"/>
+    <!-- dashboard -->
+    <rect x="1214" y="230" width="70" height="8" rx="4" fill="#f5c518"/>
+    <rect x="1214" y="246" width="110" height="6" rx="3" fill="#5d9cff" opacity="0.5"/>
+    <g fill="#4d8dff">
+      <rect x="1216" y="330" width="16" height="36" rx="2"/><rect x="1238" y="310" width="16" height="56" rx="2"/>
+      <rect x="1260" y="320" width="16" height="46" rx="2"/><rect x="1282" y="294" width="16" height="72" rx="2" fill="#f5c518"/>
+    </g>
+    <polyline points="1316,350 1346,322 1372,336 1400,290 1432,302" fill="none" stroke="#3de0a0" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="1400" cy="290" r="5" fill="#3de0a0"/>
+    <rect x="1340" y="232" width="96" height="40" rx="6" fill="#081c47" stroke="#4d8dff" stroke-opacity="0.5"/>
+    <rect x="1350" y="243" width="50" height="6" rx="3" fill="#7fb2ff"/>
+    <rect x="1350" y="255" width="30" height="6" rx="3" fill="#f5c518"/>
+    <!-- stand -->
+    <path d="M1310 396 L1300 470 H1350 L1340 396 Z" fill="#11337d" stroke="#5d9cff" stroke-width="2"/>
+    <rect x="1270" y="468" width="110" height="10" rx="5" fill="#16408f" stroke="#5d9cff" stroke-width="2"/>
+    <!-- keyboard -->
+    <path d="M1205 548 L1222 512 H1428 L1445 548 Z" fill="#11337d" stroke="#5d9cff" stroke-width="2"/>
+    <g stroke="#5d9cff" stroke-opacity="0.45" stroke-width="2">
+      <line x1="1222" y1="524" x2="1428" y2="524"/><line x1="1216" y1="536" x2="1434" y2="536"/>
+    </g>
+    <rect x="1458" y="526" width="24" height="34" rx="12" fill="#11337d" stroke="#5d9cff" stroke-width="2"/>
+  </g>
+
+  <!-- SERVER RACK -->
+  <g>
+    <rect x="1510" y="100" width="170" height="460" rx="8" fill="#0a1f52" stroke="#6aa6ff" stroke-width="3"/>
+    <rect x="1510" y="100" width="170" height="22" rx="8" fill="#16408f"/>
+    <g id="unit">
+      <rect x="1524" y="134" width="142" height="36" rx="4" fill="url(#panel)" stroke="#4d8dff" stroke-opacity="0.7"/>
+      <circle cx="1538" cy="152" r="4" fill="#3de0a0"/>
+      <g fill="#081c47"><rect x="1552" y="144" width="20" height="16" rx="2"/><rect x="1576" y="144" width="20" height="16" rx="2"/><rect x="1600" y="144" width="20" height="16" rx="2"/><rect x="1624" y="144" width="20" height="16" rx="2"/></g>
+      <rect x="1650" y="146" width="8" height="12" rx="2" fill="#5d9cff" opacity="0.6"/>
+    </g>
+    <use href="#unit" y="46"/>
+    <use href="#unit" y="92"/>
+    <!-- switch unit -->
+    <rect x="1524" y="272" width="142" height="36" rx="4" fill="#123a8a" stroke="#f5c518" stroke-opacity="0.8"/>
+    <g fill="#081c47">
+      <rect x="1532" y="282" width="10" height="8"/><rect x="1546" y="282" width="10" height="8"/><rect x="1560" y="282" width="10" height="8"/><rect x="1574" y="282" width="10" height="8"/><rect x="1588" y="282" width="10" height="8"/><rect x="1602" y="282" width="10" height="8"/><rect x="1616" y="282" width="10" height="8"/><rect x="1630" y="282" width="10" height="8"/><rect x="1644" y="282" width="10" height="8"/>
+      <rect x="1532" y="294" width="10" height="8"/><rect x="1546" y="294" width="10" height="8"/><rect x="1560" y="294" width="10" height="8"/><rect x="1574" y="294" width="10" height="8"/><rect x="1588" y="294" width="10" height="8"/><rect x="1602" y="294" width="10" height="8"/><rect x="1616" y="294" width="10" height="8"/><rect x="1630" y="294" width="10" height="8"/><rect x="1644" y="294" width="10" height="8"/>
+    </g>
+    <use href="#unit" y="184"/>
+    <use href="#unit" y="230"/>
+    <use href="#unit" y="276"/>
+    <rect x="1524" y="502" width="142" height="44" rx="4" fill="#081c47" stroke="#4d8dff" stroke-opacity="0.5"/>
+    <g stroke="#4d8dff" stroke-opacity="0.5"><line x1="1534" y1="514" x2="1656" y2="514"/><line x1="1534" y1="524" x2="1656" y2="524"/><line x1="1534" y1="534" x2="1656" y2="534"/></g>
+    <circle cx="1538" cy="198" r="4" fill="#f5c518"/>
+  </g>
+
+  <!-- CCTV CAMERA -->
+  <g>
+    <rect x="1868" y="120" width="24" height="70" rx="4" fill="#16408f" stroke="#5d9cff" stroke-width="2"/>
+    <path d="M1868 160 H1840 V182" fill="none" stroke="#5d9cff" stroke-width="6" stroke-linecap="round"/>
+    <g transform="rotate(14 1800 180)">
+      <rect x="1748" y="160" width="110" height="44" rx="14" fill="url(#panel)" stroke="#6aa6ff" stroke-width="3"/>
+      <rect x="1740" y="154" width="120" height="14" rx="7" fill="#1b4aa3" stroke="#6aa6ff" stroke-width="2"/>
+      <circle cx="1756" cy="182" r="16" fill="#081c47" stroke="#6aa6ff" stroke-width="3"/>
+      <circle cx="1756" cy="182" r="7" fill="#2d7bff"/>
+      <circle cx="1753" cy="179" r="2.5" fill="#cfe2ff"/>
+      <circle cx="1840" cy="182" r="4" fill="#ff5a5a"/>
+    </g>
+  </g>
+
+  <!-- PRINTER -->
+  <g>
+    <rect x="1742" y="392" width="130" height="34" rx="4" fill="#e9f0ff" stroke="#9cc3ff"/>
+    <g stroke="#7fa3d9" stroke-width="2"><line x1="1760" y1="404" x2="1840" y2="404"/><line x1="1760" y1="414" x2="1820" y2="414"/></g>
+    <rect x="1720" y="420" width="174" height="96" rx="12" fill="url(#panel)" stroke="#6aa6ff" stroke-width="3"/>
+    <rect x="1734" y="434" width="70" height="20" rx="4" fill="#081c47"/>
+    <rect x="1740" y="440" width="34" height="8" rx="2" fill="#3de0a0" opacity="0.8"/>
+    <circle cx="1870" cy="444" r="6" fill="#f5c518"/>
+    <rect x="1736" y="488" width="142" height="14" rx="4" fill="#081c47"/>
+    <rect x="1730" y="514" width="154" height="46" rx="8" fill="#0c2864" stroke="#5d9cff" stroke-width="2"/>
+    <rect x="1760" y="530" width="94" height="8" rx="4" fill="#16408f"/>
+  </g>
+
+  <!-- glowing nodes -->
+  <g fill="#f5c518">
+    <circle cx="1480" cy="150" r="10" opacity="0.35" filter="url(#soft)"/><circle cx="1480" cy="150" r="5"/>
+    <circle cx="1080" cy="490" r="10" opacity="0.35" filter="url(#soft)"/><circle cx="1080" cy="490" r="5"/>
+    <circle cx="1720" cy="450" r="5"/><circle cx="1760" cy="175" r="5"/>
+  </g>
+
+  <!-- accents -->
+  <g fill="none" stroke="#f5c518" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M1004 160 v18 M995 169 h18"/><path d="M1460 70 v14 M1453 77 h14"/>
+  </g>
+  <circle cx="1690" cy="610" r="3" fill="#7fb2ff" opacity="0.6"/>
+  <polygon points="1120,110 1138,120 1138,140 1120,150 1102,140 1102,120" fill="none" stroke="#5d9cff" stroke-opacity="0.45" stroke-width="2"/>
+
+  <!-- left readability fade -->
+  <rect width="1920" height="660" fill="url(#fade)"/>
+</svg>

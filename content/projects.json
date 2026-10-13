@@ -1,0 +1,172 @@
+[
+ {
+  "slug": "hyundai",
+  "title": "Hyundai new office networking",
+  "tag": "Network cabling",
+  "location": "Jeddah, Saudi Arabia",
+  "locationShort": "Jeddah",
+  "period": "July to September 2024",
+  "dates": "31 July to 5 September 2024",
+  "summary": "LAN and fiber cabling, two server rooms and CCTV for a new office building.",
+  "cardImage": "/images/rack.jpg",
+  "heroImage": "/images/rack.jpg",
+  "overview": [
+   "Knock-IT delivered the network cabling for Hyundai's new office in Jeddah. Over five weeks, from 31 July to 5 September 2024, the team surveyed and traced cable routes, pulled LAN and fiber cabling across the building, installed CCTV and cabinets in two IT rooms, and labeled and tested every line before handover.",
+   "Part of the work served the building's own infrastructure, including the lift lobby, cafe and meeting room cabling, fiber from the 2nd to the 6th floor and a 24-line cable pull over three days. The Hyundai office work covered cabinet installation, termination, STC fiber from B1 to the 7th floor, cabling for IT rooms 1 and 2, labeling, testing and CCTV."
+  ],
+  "facts": [
+   {
+    "label": "Project",
+    "value": "Hyundai new office networking"
+   },
+   {
+    "label": "Location",
+    "value": "Jeddah, Saudi Arabia"
+   },
+   {
+    "label": "Duration",
+    "value": "31 July to 5 September 2024"
+   },
+   {
+    "label": "Delivered by",
+    "value": "Knock-IT Solution & Service"
+   },
+   {
+    "label": "Scope",
+    "value": "LAN and fiber cabling, CCTV, cabinets, labeling and testing"
+   }
+  ],
+  "numbers": [
+   {
+    "value": "2 × 32-core",
+    "label": "fiber lines between the two server rooms"
+   },
+   {
+    "value": "6",
+    "label": "LAN lines between Server 1 and Server 2"
+   },
+   {
+    "value": "4 + 12",
+    "label": "CCTV lines and desk system box lines"
+   },
+   {
+    "value": "10 + 10",
+    "label": "LAN lines to the lift lobby, cafe and meeting room"
+   },
+   {
+    "value": "24",
+    "label": "line cable pulls over three days"
+   },
+   {
+    "value": "2",
+    "label": "IT rooms fitted with new cabinets"
+   }
+  ],
+  "phasesTitle": "Five phases in five weeks",
+  "phases": [
+   {
+    "date": "31 Jul",
+    "title": "Survey and tracing",
+    "text": "Cable tracing, line path checks and a full site survey."
+   },
+   {
+    "date": "3 to 6 Aug",
+    "title": "LAN and CCTV cabling",
+    "text": "LAN pulling, CCTV and desk lines, cameras to server room 2 and 32-core fiber between servers."
+   },
+   {
+    "date": "13 to 28 Aug",
+    "title": "Building-side cabling",
+    "text": "Lift lobby, cafe and meeting room lines, fiber from the 2nd to 6th floor, and 24-line pulls."
+   },
+   {
+    "date": "22 Aug to 2 Sep",
+    "title": "Cabinets and termination",
+    "text": "Cabinets in IT rooms 1 and 2, balance cable termination and STC fiber from B1 to the 7th floor."
+   },
+   {
+    "date": "3 to 5 Sep",
+    "title": "Testing and handover",
+    "text": "Labeling and testing, CCTV installed, old cabinet moved to the 8th floor and access points finished."
+   }
+  ],
+  "challenge": "Building permissions to make openings in walls delayed the work, so the building-side cabling was completed before the remaining Hyundai office works resumed.",
+  "gallery": [
+   {
+    "image": "/images/projects/hyundai/01.jpg",
+    "title": "Site survey and cable tracing",
+    "date": "Jul 31, 2024"
+   },
+   {
+    "image": "/images/ceil.jpg",
+    "title": "LAN cable pulling",
+    "date": "Aug 3, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/03.jpg",
+    "title": "LAN cabling from the lift lobby and cafe",
+    "date": "Aug 13, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/04.jpg",
+    "title": "Fiber cable pulling, 2nd to 6th floor",
+    "date": "Aug 17, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/05.jpg",
+    "title": "Labeling and testing, building side",
+    "date": "Aug 18, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/06.jpg",
+    "title": "Cabinet removal from the Hyundai site",
+    "date": "Aug 22, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/07.jpg",
+    "title": "24-line cable pulling",
+    "date": "Aug 25, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/08.jpg",
+    "title": "Fiber link from the 2nd floor security office to the 6th floor IT room",
+    "date": "Aug 27, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/09.jpg",
+    "title": "Fiber splicing and testing in the 6th floor IT room",
+    "date": "Aug 28, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/10.jpg",
+    "title": "Cabinet installation, IT rooms 1 and 2",
+    "date": "Aug 29, 2024"
+   },
+   {
+    "image": "/images/plan.jpg",
+    "title": "On-site planning session",
+    "date": "Aug 31, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/12.jpg",
+    "title": "STC fiber link tested, B1 to 7th floor",
+    "date": "Sep 1, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/13.jpg",
+    "title": "Labeling and testing patch panels",
+    "date": "Sep 4, 2024"
+   },
+   {
+    "image": "/images/projects/hyundai/14.jpg",
+    "title": "Old cabinet relocated to the 8th floor",
+    "date": "Sep 4, 2024 (night)"
+   },
+   {
+    "image": "/images/projects/hyundai/15.jpg",
+    "title": "Cameras connected and final works completed",
+    "date": "Sep 5, 2024"
+   }
+  ]
+ }
+]

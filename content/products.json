@@ -1,0 +1,351 @@
+{
+ "groups": [
+  {
+   "id": "all",
+   "label": "All"
+  },
+  {
+   "id": "co",
+   "label": "Computing"
+  },
+  {
+   "id": "ne",
+   "label": "Networking"
+  },
+  {
+   "id": "pr",
+   "label": "Printing"
+  },
+  {
+   "id": "cc",
+   "label": "CCTV"
+  },
+  {
+   "id": "of",
+   "label": "Office"
+  },
+  {
+   "id": "ct",
+   "label": "Container Houses"
+  }
+ ],
+ "categories": [
+  {
+   "name": "Portable Systems",
+   "group": "co",
+   "image": "/images/portmain.jpg",
+   "items": [
+    {
+     "name": "Laptops and notebooks",
+     "image": "/images/lapnb.jpg"
+    },
+    {
+     "name": "Gaming laptops",
+     "image": "/images/gamlap.jpg"
+    },
+    {
+     "name": "2-in-1 laptops",
+     "image": "/images/twoin1.jpg"
+    },
+    {
+     "name": "Chromebooks",
+     "image": "/images/chromeb.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Desktop Systems",
+   "group": "co",
+   "image": "/images/deskmain.jpg",
+   "items": [
+    {
+     "name": "Desktop computers",
+     "image": "/images/deskpc.jpg"
+    },
+    {
+     "name": "Gaming desktops",
+     "image": "/images/gdsk.jpg"
+    },
+    {
+     "name": "Workstations",
+     "image": "/images/wkst.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Rack Mount Systems",
+   "group": "co",
+   "image": "/images/rackmain.jpg",
+   "items": [
+    {
+     "name": "Servers",
+     "image": "/images/servroom.jpg"
+    },
+    {
+     "name": "Storage",
+     "image": "/images/storsrv.jpg"
+    },
+    {
+     "name": "Server and storage accessories",
+     "image": "/images/srvacc.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Peripherals",
+   "group": "co",
+   "image": "/images/periph.jpg",
+   "items": [
+    {
+     "name": "Monitors",
+     "image": "/images/monit.jpg"
+    },
+    {
+     "name": "Keyboards and mice",
+     "image": "/images/kbm.jpg"
+    },
+    {
+     "name": "Headsets",
+     "image": "/images/hdst.jpg"
+    },
+    {
+     "name": "Speakers and sound cards",
+     "image": "/images/spkr.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Computer Accessories",
+   "group": "co",
+   "image": "/images/cacc.jpg",
+   "items": [
+    {
+     "name": "Computer and laptop accessories",
+     "image": "/images/clacc.jpg"
+    },
+    {
+     "name": "Laptop cases and bags",
+     "image": "/images/lbag.jpg"
+    },
+    {
+     "name": "Cables, connectors and accessories",
+     "image": "/images/cabl2.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Active Networking and Security",
+   "group": "ne",
+   "image": "/images/netmain.jpg",
+   "items": [
+    {
+     "name": "Switches and routers",
+     "image": "/images/swrt.jpg"
+    },
+    {
+     "name": "Firewalls and security appliances",
+     "image": "/images/fwal.jpg"
+    },
+    {
+     "name": "Wireless access points",
+     "image": "/images/wap.jpg"
+    },
+    {
+     "name": "Interface cards and accessories",
+     "image": "/images/nics.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Passive Networking",
+   "group": "ne",
+   "image": "/images/passmain.jpg",
+   "items": [
+    {
+     "name": "Network racks",
+     "image": "/images/netrk.jpg"
+    },
+    {
+     "name": "CAT6 and fiber patch panels",
+     "image": "/images/cat6pp.jpg"
+    },
+    {
+     "name": "CAT6 and fiber cable",
+     "image": "/images/cat6cb.jpg"
+    },
+    {
+     "name": "Patch cords, fiber pigtails and GBICs",
+     "image": "/images/patchc.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Color Printing and Copying",
+   "group": "pr",
+   "image": "/images/colprt.jpg",
+   "items": [
+    {
+     "name": "Color printers and MFPs",
+     "image": "/images/clrmfp.jpg"
+    },
+    {
+     "name": "Color copier machines",
+     "image": "/images/clrcop.jpg"
+    },
+    {
+     "name": "Heavy duty color copiers",
+     "image": "/images/hvycop.jpg"
+    },
+    {
+     "name": "ID card, cheque book and industrial printers",
+     "image": "/images/idprt.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Monochrome Printing and Copying",
+   "group": "pr",
+   "image": "/images/monoprt.jpg",
+   "items": [
+    {
+     "name": "Monochrome printers and MFPs",
+     "image": "/images/monomfp.jpg"
+    },
+    {
+     "name": "Monochrome copier machines",
+     "image": "/images/monocop.jpg"
+    },
+    {
+     "name": "Heavy duty copiers",
+     "image": "/images/hvycop.jpg"
+    },
+    {
+     "name": "Dot matrix printers",
+     "image": "/images/dotmx.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Printing Consumables",
+   "group": "pr",
+   "image": "/images/consum.jpg",
+   "items": [
+    {
+     "name": "Ink and toner cartridges",
+     "image": "/images/inktn.jpg"
+    },
+    {
+     "name": "PQ Perfect Quality compatible cartridges",
+     "image": "/images/pqcart.jpg"
+    },
+    {
+     "name": "Printer ribbons",
+     "image": "/images/ribn.jpg"
+    },
+    {
+     "name": "Paper",
+     "image": "/images/paperx.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Surveillance and Access Control",
+   "group": "cc",
+   "image": "/images/survmain.jpg",
+   "items": [
+    {
+     "name": "CCTV cameras",
+     "image": "/images/cctvc.jpg"
+    },
+    {
+     "name": "Access control",
+     "image": "/images/accctl.jpg"
+    },
+    {
+     "name": "Monitoring screens",
+     "image": "/images/monscr.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Communication",
+   "group": "of",
+   "image": "/images/commmain.jpg",
+   "items": [
+    {
+     "name": "Business headsets",
+     "image": "/images/bizhs.jpg"
+    },
+    {
+     "name": "Business phones",
+     "image": "/images/bizph.jpg"
+    },
+    {
+     "name": "Cordless and analogue phones",
+     "image": "/images/cordl.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Office Stationery and Papers",
+   "group": "of",
+   "image": "/images/off.jpg",
+   "items": [
+    {
+     "name": "Books, registers and writing instruments",
+     "image": "/images/i_books.svg"
+    },
+    {
+     "name": "Desk equipment, shredders, laminators and stamps",
+     "image": "/images/i_shredder.svg"
+    },
+    {
+     "name": "Pre-print jobs, ATM rolls, paper rims and plotter paper",
+     "image": "/images/i_roll.svg"
+    }
+   ]
+  },
+  {
+   "name": "Other Devices",
+   "group": "of",
+   "image": "/images/imac.jpg",
+   "items": [
+    {
+     "name": "Tablets and mobile devices",
+     "image": "/images/tablet.jpg"
+    },
+    {
+     "name": "Digital cameras and GPS systems",
+     "image": "/images/i_camera.svg"
+    },
+    {
+     "name": "Audio visual equipment",
+     "image": "/images/i_av.svg"
+    },
+    {
+     "name": "Gaming hardware",
+     "image": "/images/mouse.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Prefabricated Container Houses",
+   "group": "ct",
+   "image": "/images/cthouse.jpg",
+   "items": [
+    {
+     "name": "Modern container houses",
+     "image": "/images/cthouse.jpg"
+    },
+    {
+     "name": "Portable site cabins",
+     "image": "/images/cthouse.jpg"
+    },
+    {
+     "name": "Interiors with kitchenette and electrical board",
+     "image": "/images/cthouse.jpg"
+    }
+   ]
+  }
+ ]
+}

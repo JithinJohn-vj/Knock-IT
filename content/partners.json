@@ -1,0 +1,32 @@
+[
+ {
+  "logo": "/images/logos/l_hp.svg",
+  "name": "HP",
+  "level": "Gold Partner"
+ },
+ {
+  "logo": "/images/logos/l_canon.svg",
+  "name": "Canon",
+  "level": "Authorized Reseller"
+ },
+ {
+  "logo": null,
+  "name": "Lexmark",
+  "level": "Premium Partner"
+ },
+ {
+  "logo": "/images/logos/l_samsung.svg",
+  "name": "Samsung",
+  "level": "Silver Partner"
+ },
+ {
+  "logo": "/images/logos/l_epson.svg",
+  "name": "Epson",
+  "level": "Authorized Reseller"
+ },
+ {
+  "logo": null,
+  "name": "Brother",
+  "level": "Authorized Reseller"
+ }
+]

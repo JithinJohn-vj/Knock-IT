@@ -1,0 +1,128 @@
+[
+ {
+  "title": "Structured Cabling",
+  "text": "LAN and fiber design, deployment, labeling and testing.",
+  "category": "inf",
+  "icon": "net",
+  "image": "/images/pp.jpg"
+ },
+ {
+  "title": "Wireless LAN",
+  "text": "Wi-Fi deployment with Cisco, Huawei and other brands.",
+  "category": "inf",
+  "icon": "wifi",
+  "image": "/images/ceil.jpg"
+ },
+ {
+  "title": "Network Monitoring",
+  "text": "SolarWinds, ManageEngine, PRTG and HPE Airwave.",
+  "category": "sec",
+  "icon": "shd",
+  "image": "/images/net.jpg"
+ },
+ {
+  "title": "Network SIEM",
+  "text": "Deployments such as Splunk Enterprise.",
+  "category": "sec",
+  "icon": "shd",
+  "image": "/images/lap.jpg"
+ },
+ {
+  "title": "IT Security",
+  "text": "Network and security solutions.",
+  "category": "sec",
+  "icon": "shd",
+  "image": "/images/cams.jpg"
+ },
+ {
+  "title": "DNS Servers",
+  "text": "Corporate and ISP DNS, ISC BIND on Linux.",
+  "category": "mail",
+  "icon": "srv",
+  "image": "/images/rack.jpg"
+ },
+ {
+  "title": "Email Servers",
+  "text": "MS Exchange 2013, 2016, 2019 and Zimbra.",
+  "category": "mail",
+  "icon": "mal",
+  "image": "/images/dc.jpg"
+ },
+ {
+  "title": "Email Gateways",
+  "text": "Email gateway appliance setup.",
+  "category": "mail",
+  "icon": "mal",
+  "image": "/images/circ.jpg"
+ },
+ {
+  "title": "Exchange Migration",
+  "text": "Planned Exchange server migration.",
+  "category": "mail",
+  "icon": "srv",
+  "image": "/images/cab.jpg"
+ },
+ {
+  "title": "Virtualization",
+  "text": "Server virtualization solutions.",
+  "category": "inf",
+  "icon": "srv",
+  "image": "/images/dc.jpg"
+ },
+ {
+  "title": "System Integration",
+  "text": "Joining hardware, software and networks.",
+  "category": "con",
+  "icon": "net",
+  "image": "/images/pc.jpg"
+ },
+ {
+  "title": "IT Consultancy",
+  "text": "Advice on infrastructure, upgrades and planning.",
+  "category": "con",
+  "icon": "srv",
+  "image": "/images/plan.jpg"
+ },
+ {
+  "title": "Data Center Solutions",
+  "text": "Design and build of server rooms and data centers.",
+  "category": "inf",
+  "icon": "srv",
+  "image": "/images/dc.jpg"
+ },
+ {
+  "title": "Cloud Solutions",
+  "text": "Cloud migration and hosted infrastructure.",
+  "category": "inf",
+  "icon": "srv",
+  "image": "/images/net.jpg"
+ },
+ {
+  "title": "Disaster Recovery",
+  "text": "Backup and recovery plans that keep you running.",
+  "category": "sec",
+  "icon": "shd",
+  "image": "/images/rack.jpg"
+ },
+ {
+  "title": "Document Archiving",
+  "text": "Digital archiving and document management.",
+  "category": "con",
+  "icon": "srv",
+  "image": "/images/off.jpg"
+ },
+ {
+  "title": "Video Conferencing",
+  "text": "Meeting room and video conferencing systems.",
+  "category": "con",
+  "icon": "cam",
+  "image": "/images/plan.jpg"
+ },
+ {
+  "title": "IP Telephony",
+  "text": "IP phone systems for offices and branches.",
+  "category": "con",
+  "icon": "mal",
+  "image": "/images/hs.jpg"
+ }
+]

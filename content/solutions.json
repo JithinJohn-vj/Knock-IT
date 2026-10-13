@@ -1,0 +1,97 @@
+{
+ "solutions": [
+  {
+   "title": "Cabling and infrastructure",
+   "text": "LAN and fiber design, deployment, labeling and testing, with Wi-Fi and virtualized server environments built on top.",
+   "tags": [
+    "Structured Cabling",
+    "Wireless LAN",
+    "Data Center Solutions"
+   ],
+   "image": "/images/solutions/sol1.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"2\" y=\"16\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"9\" y=\"16\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"16\" y=\"16\" width=\"6\" height=\"5\" rx=\"1\"/><path d=\"M12 8v4M5 16v-4h14v4\"/></svg>"
+  },
+  {
+   "title": "Network and monitoring",
+   "text": "Keep the network visible and under control with monitoring, SIEM and DNS services.",
+   "tags": [
+    "Network Monitoring",
+    "Network SIEM",
+    "DNS Servers"
+   ],
+   "image": "/images/solutions/sol2.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M8 21h8M12 17v4M6 12l3-3 3 2 4-4 2 2\"/></svg>"
+  },
+  {
+   "title": "Security and surveillance",
+   "text": "CCTV, access control and IT security solutions for offices, retail and enterprise sites.",
+   "tags": [
+    "IT Security",
+    "CCTV cameras",
+    "Access control"
+   ],
+   "image": "/images/solutions/sol3.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 8h3l1.5-2h7L17 8h3a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V9a1 1 0 011-1z\"/><circle cx=\"12\" cy=\"13\" r=\"3.5\"/></svg>"
+  },
+  {
+   "title": "Email and servers",
+   "text": "Deployment and migration of mail systems, with gateway appliances in front.",
+   "tags": [
+    "Email Servers",
+    "Email Gateways",
+    "Exchange Migration"
+   ],
+   "image": "/images/solutions/sol4.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M3 7l9 6 9-6\"/></svg>"
+  },
+  {
+   "title": "Cloud, virtualization and recovery",
+   "text": "Cloud, virtualized servers and disaster recovery that keep your business running.",
+   "tags": [
+    "Cloud Solutions",
+    "Virtualization",
+    "Disaster Recovery"
+   ],
+   "image": "/images/solutions/sol5.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 18a4 4 0 010-8 5 5 0 019.6-1A4.5 4.5 0 0117 18z\"/></svg>"
+  },
+  {
+   "title": "Communication and collaboration",
+   "text": "Video conferencing, IP telephony and business headsets and phones for connected teams.",
+   "tags": [
+    "Video Conferencing",
+    "IP Telephony",
+    "Business headsets"
+   ],
+   "image": "/images/solutions/sol6.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"8\" r=\"3\"/><circle cx=\"5\" cy=\"10\" r=\"2\"/><circle cx=\"19\" cy=\"10\" r=\"2\"/><path d=\"M6.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5\"/></svg>"
+  },
+  {
+   "title": "Integration and consultancy",
+   "text": "Advice and hands-on integration that joins hardware, software and networks into one system.",
+   "tags": [
+    "System Integration",
+    "IT Consultancy",
+    "Document Archiving"
+   ],
+   "image": "/images/solutions/sol7.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z\"/><path d=\"M14 3v5h5M9 13h6M9 17h6\"/></svg>"
+  },
+  {
+   "title": "Hardware and managed print",
+   "text": "Computers, servers, printers and managed print services from authorized partners.",
+   "tags": [
+    "Computers and servers",
+    "Printers and copiers",
+    "Managed Print Services"
+   ],
+   "image": "/images/solutions/sol8.svg",
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9V3h12v6M6 18H4a1 1 0 01-1-1v-6a2 2 0 012-2h14a2 2 0 012 2v6a1 1 0 01-1 1h-2\"/><rect x=\"6\" y=\"14\" width=\"12\" height=\"7\" rx=\"1\"/></svg>"
+  }
+ ],
+ "chipIcons": [
+  "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"2\" y=\"16\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"16\" y=\"16\" width=\"6\" height=\"5\" rx=\"1\"/><path d=\"M12 8v4M5 16v-4h14v4\"/></svg>",
+  "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0\"/><circle cx=\"12\" cy=\"19\" r=\"1\"/></svg>",
+  "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/><path d=\"M8.5 12l2.5 2.5 4.5-5\"/></svg>"
+ ]
+}

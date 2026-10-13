@@ -1,0 +1,58 @@
+[
+ {
+  "name": "hp",
+  "logo": "/images/logos/l_hp.svg"
+ },
+ {
+  "name": "dell",
+  "logo": "/images/logos/l_dell.svg"
+ },
+ {
+  "name": "cisco",
+  "logo": "/images/logos/l_cisco.svg"
+ },
+ {
+  "name": "canon",
+  "logo": "/images/logos/l_canon.svg"
+ },
+ {
+  "name": "lenovo",
+  "logo": "/images/logos/l_lenovo.svg"
+ },
+ {
+  "name": "huawei",
+  "logo": "/images/logos/l_huawei.svg"
+ },
+ {
+  "name": "microsoft",
+  "logo": "/images/logos/l_microsoft.svg"
+ },
+ {
+  "name": "netgear",
+  "logo": "/images/logos/l_netgear.svg"
+ },
+ {
+  "name": "dlink",
+  "logo": "/images/logos/l_dlink.svg"
+ },
+ {
+  "name": "logitech",
+  "logo": "/images/logos/l_logitech.svg"
+ },
+ {
+  "name": "samsung",
+  "logo": "/images/logos/l_samsung.svg"
+ },
+ {
+  "name": "epson",
+  "logo": "/images/logos/l_epson.svg"
+ },
+ {
+  "name": "toshiba",
+  "logo": "/images/logos/l_toshiba.svg"
+ },
+ {
+  "name": "wd",
+  "logo": "/images/logos/l_wd.svg"
+ }
+]
