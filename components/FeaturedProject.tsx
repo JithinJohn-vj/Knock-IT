@@ -34,12 +34,6 @@ const features = [
   { icon: I.cctv, label: 'CCTV Infrastructure' },
 ]
 
-const services = [
-  { icon: I.network, title: 'Network Infrastructure', text: 'Complete LAN and fiber cabling with professional installation and testing.' },
-  { icon: I.server, title: 'Server Room Setup', text: 'Rack installation, cable management and system configuration at 2 locations.' },
-  { icon: I.cctv, title: 'CCTV Integration', text: 'Camera cabling, configuration and full system testing for enhanced security.' },
-]
-
 const values = [
   { icon: I.shield, title: 'Reliable Infrastructure', text: 'Built for stability and performance' },
   { icon: I.chart, title: 'Scalable Solution', text: 'Supports future business growth' },
@@ -93,17 +87,6 @@ export default function FeaturedProject() {
               <Hyundai light />
             </div>
             <p className="fpt">A stronger partnership for a smarter workspace</p>
-          </div>
-
-          <div className="fps">
-            {services.map((s) => (
-              <article key={s.title}>
-                <em>{svg(s.icon, 24)}</em>
-                <h3>{s.title}</h3>
-                <p>{s.text}</p>
-                <Link href={HREF} aria-label={`${s.title}: view project`}>{svg(I.arrow, 16)}</Link>
-              </article>
-            ))}
           </div>
 
           <div className="fpq">
