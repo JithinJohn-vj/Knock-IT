@@ -5,7 +5,7 @@ type Photo = { image: string; title: string; date: string }
 
 // Auto-rotating photo slider for the featured project. Photos load lazily: a slide's
 // image is only rendered once it is current or next up.
-export default function ProjectSlider({ photos }: { photos: Photo[] }) {
+export default function ProjectSlider({ photos, captions = true }: { photos: Photo[]; captions?: boolean }) {
   const n = photos.length
   const [i, setI] = useState(0)
   const [paused, setPaused] = useState(false)
@@ -35,7 +35,7 @@ export default function ProjectSlider({ photos }: { photos: Photo[] }) {
       {photos.map((p, k) => (
         <figure key={p.image} className={k === i ? 'on' : ''} aria-hidden={k !== i}>
           {seen.has(k) && <img src={p.image} alt={p.title} decoding="async" />}
-          <figcaption><b>{p.title}</b><small>{p.date}</small></figcaption>
+          {captions && <figcaption><b>{p.title}</b><small>{p.date}</small></figcaption>}
         </figure>
       ))}
       <button type="button" className="fslp" onClick={() => go(i - 1)} aria-label="Previous photo">
