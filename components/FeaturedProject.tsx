@@ -55,9 +55,9 @@ function Hyundai({ light }: { light?: boolean }) {
 export default function FeaturedProject() {
   return (
     <div className="sec fpsec">
-      <div className="w fp1">
-        <div className="eb hye rv">Featured project</div>
-        <div className="fptop rv">
+      <div className="w fp2">
+        <div className="fp2l rv">
+          <div className="eb hye">Featured project</div>
           <div className="fpc">
             <div className="fpm">
               <span className="fpp"><em>{svg(I.pin, 20)}</em><span><b>King Abdullah</b><small>Economic City, KSA</small></span></span>
@@ -71,31 +71,26 @@ export default function FeaturedProject() {
             </div>
             <p className="fpt">A stronger partnership for a smarter workspace</p>
           </div>
-          <ProjectSlider photos={gallery} />
-        </div>
-
-        <div className="fpl rv">
           <h2><Hl text="Powering Hyundai's New Office with a Stronger Network" /></h2>
-          <div className="fpbd">
-            <p className="fpd"><Hl text="We delivered a complete end-to-end networking solution for Hyundai's new office in King Abdullah Economic City, including structured cabling, fiber connectivity, server room setup and CCTV infrastructure, built for reliability and future growth." /></p>
-            <div>
-              <ul className="fpf">
-                {features.map((f) => (
-                  <li key={f.label}><em>{svg(f.icon, 24)}</em><span>{f.label}</span></li>
-                ))}
-              </ul>
-              <div className="fpa">
-                <Link className="fpy" href={HREF}>{svg(I.handshake, 26)}<span>View Project Details</span>{svg(I.arrow, 20)}</Link>
-                <Link className="fpo" href="/projects"><span>More Projects</span>{svg(I.arrow, 20)}</Link>
-              </div>
-            </div>
+          <p className="fpd"><Hl text="We delivered a complete end-to-end networking solution for Hyundai's new office in King Abdullah Economic City, including structured cabling, fiber connectivity, server room setup and CCTV infrastructure, built for reliability and future growth." /></p>
+          <ul className="fpf">
+            {features.map((f) => (
+              <li key={f.label}><em>{svg(f.icon, 24)}</em><span>{f.label}</span></li>
+            ))}
+          </ul>
+          <div className="fpa">
+            <Link className="fpy" href={HREF}>{svg(I.handshake, 26)}<span>View Project Details</span>{svg(I.arrow, 20)}</Link>
+            <Link className="fpo" href="/projects"><span>More Projects</span>{svg(I.arrow, 20)}</Link>
           </div>
         </div>
 
-        <div className="fpq rv">
-          {values.map((v) => (
-            <div key={v.title}><em>{svg(v.icon, 22)}</em><span><b>{v.title}</b><small>{v.text}</small></span></div>
-          ))}
+        <div className="fp2r rv">
+          <ProjectSlider photos={gallery} />
+          <div className="fpq">
+            {values.map((v) => (
+              <div key={v.title}><em>{svg(v.icon, 22)}</em><span><b>{v.title}</b><small>{v.text}</small></span></div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
