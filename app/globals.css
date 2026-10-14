@@ -1047,3 +1047,6 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 @media(max-width:820px){.kfq>div{flex-direction:row;align-items:center;text-align:start;gap:12px}.kfs .fsld{top:62px}}
 @media(max-width:560px){.kff{grid-template-columns:1fr;gap:12px}.kff li{padding:0}}
 @media(max-width:1100px){.kfp::before,.kfp::after,.kfr::before{display:none}}
+.kfe{margin:0 0 16px}.kfg{align-items:start}.kfl .fpc{margin-top:0}
+.kfr .kff{margin:0;padding:16px 10px;border:1px solid var(--gr);border-radius:18px;background:#fff;box-shadow:0 12px 28px #0b1a3312}.kfr .kff li{justify-content:center}.kfr .kff li:first-child{padding-inline-start:10px}
+@media(max-width:560px){.kfr .kff{padding:16px}.kfr .kff li{justify-content:flex-start}.kfr .kff li:first-child{padding-inline-start:0}}

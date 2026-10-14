@@ -51,62 +51,63 @@ const values = [
 export default function FeaturedProject() {
   return (
     <div className="sec kfp">
-      <div className="w kfg">
-        <div className="kfl rv">
-          <div className="eb hye">Featured project</div>
-
-          <div className="fpc">
-            <div className="fpm">
-              <span className="fpp"><em>{svg(I.pin, 20)}</em><span><b>King Abdullah</b><small>Economic City, KSA</small></span></span>
-              <span className="fpp fpdt">{svg(I.calendar, 18)}<span>Jul – Sep 2024</span></span>
-            </div>
-            <div className="fpn" role="img" aria-label="Knock-IT and Hyundai">
-              <img className="fpk" src="/images/logos/logoD.png" alt="" />
-              <em>{svg(I.handshake, 52)}</em>
-              <u />
-              <span className="fph fphw"><img src="/images/logos/l_hyundai.svg" alt="" /><b>HYUNDAI</b></span>
-            </div>
-            <p className="fpt">A stronger partnership for a smarter workspace</p>
-          </div>
-
-          <h2><Hl text="End-to-End Network Infrastructure for Hyundai's New Office" word="Hyundai's New Office" /></h2>
-          <p className="kfd">We delivered a complete networking solution for Hyundai&rsquo;s new office in King Abdullah Economic City, including structured cabling, fiber connectivity, server room setup and CCTV, built for a secure, scalable and high-performance workspace.</p>
-
-          <ul className="kff">
-            {features.map((f) => (
-              <li key={f.label}><em>{svg(f.icon, 22)}</em><b>{f.label}</b></li>
-            ))}
-          </ul>
-
-          <dl className="kfi">
-            {info.map((x) => (
-              <div key={x.label}><em>{svg(x.icon, 20)}</em><span><dt>{x.label}</dt><dd>{x.value}</dd></span></div>
-            ))}
-          </dl>
-
-          <div className="kfa">
-            <Link className="kfy" href={HREF}><span>Explore the project</span><i>{svg(I.arrow, 20)}</i></Link>
-            <Link className="kfv" href="/projects"><span>View all projects</span>{svg(I.arrow, 18)}</Link>
-          </div>
-        </div>
-
-        <div className="kfr rv">
-          <div className="kfs">
-            <ProjectSlider photos={gallery} captions={false} />
-            <span className="kfb"><i />Completed</span>
-            <div className="kfo">
-              <div>
-                <small>Project overview</small>
-                <h3>Modern Network Infrastructure for a Smarter Workspace</h3>
+      <div className="w">
+        <div className="eb hye kfe rv">Featured project</div>
+        <div className="kfg">
+          <div className="kfl rv">
+            <div className="fpc">
+              <div className="fpm">
+                <span className="fpp"><em>{svg(I.pin, 20)}</em><span><b>King Abdullah</b><small>Economic City, KSA</small></span></span>
+                <span className="fpp fpdt">{svg(I.calendar, 18)}<span>Jul – Sep 2024</span></span>
               </div>
-              <p>A reliable and future-ready network setup to support Hyundai&rsquo;s growing operations in KSA.</p>
+              <div className="fpn" role="img" aria-label="Knock-IT and Hyundai">
+                <img className="fpk" src="/images/logos/logoD.png" alt="" />
+                <em>{svg(I.handshake, 52)}</em>
+                <u />
+                <span className="fph fphw"><img src="/images/logos/l_hyundai.svg" alt="" /><b>HYUNDAI</b></span>
+              </div>
+              <p className="fpt">A stronger partnership for a smarter workspace</p>
+            </div>
+
+            <h2><Hl text="End-to-End Network Infrastructure for Hyundai's New Office" word="Hyundai's New Office" /></h2>
+            <p className="kfd">We delivered a complete networking solution for Hyundai&rsquo;s new office in King Abdullah Economic City, including structured cabling, fiber connectivity, server room setup and CCTV, built for a secure, scalable and high-performance workspace.</p>
+
+            <dl className="kfi">
+              {info.map((x) => (
+                <div key={x.label}><em>{svg(x.icon, 20)}</em><span><dt>{x.label}</dt><dd>{x.value}</dd></span></div>
+              ))}
+            </dl>
+
+            <div className="kfa">
+              <Link className="kfy" href={HREF}><span>Explore the project</span><i>{svg(I.arrow, 20)}</i></Link>
+              <Link className="kfv" href="/projects"><span>View all projects</span>{svg(I.arrow, 18)}</Link>
             </div>
           </div>
 
-          <div className="kfq">
-            {values.map((v) => (
-              <div key={v.label}><em>{svg(v.icon, 34)}</em><b>{v.label}</b></div>
-            ))}
+          <div className="kfr rv">
+            <div className="kfs">
+              <ProjectSlider photos={gallery} captions={false} />
+              <span className="kfb"><i />Completed</span>
+              <div className="kfo">
+                <div>
+                  <small>Project overview</small>
+                  <h3>Modern Network Infrastructure for a Smarter Workspace</h3>
+                </div>
+                <p>A reliable and future-ready network setup to support Hyundai&rsquo;s growing operations in KSA.</p>
+              </div>
+            </div>
+
+            <div className="kfq">
+              {values.map((v) => (
+                <div key={v.label}><em>{svg(v.icon, 34)}</em><b>{v.label}</b></div>
+              ))}
+            </div>
+
+            <ul className="kff">
+              {features.map((f) => (
+                <li key={f.label}><em>{svg(f.icon, 22)}</em><b>{f.label}</b></li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
