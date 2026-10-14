@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import projects from '@/content/projects.json'
+import Hl from '@/components/Hl'
 
 export const metadata: Metadata = { title: 'Projects | Knock-IT Solution & Service' }
 
@@ -25,7 +26,7 @@ export default function ProjectsPage() {
                   <span className="pct">{p.tag}</span>
                 </div>
                 <div className="pcb">
-                  <h3>{p.title}</h3>
+                  <h3><Hl text={p.title} /></h3>
                   <p>{p.summary}</p>
                   <ul>
                     <li>

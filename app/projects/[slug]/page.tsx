@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import projects from '@/content/projects.json'
 import ProjectGallery from '@/components/ProjectGallery'
 import CoBrand from '@/components/CoBrand'
+import Hl from '@/components/Hl'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -28,7 +29,7 @@ export default async function ProjectPage({ params }: Props) {
         <div className="w">
           <Link className="pbk" href="/projects">&#8592; <span>All projects</span></Link>
           <div className="eb">Project</div>
-          <h1>{p.title}</h1>
+          <h1><Hl text={p.title} /></h1>
           <p className="lead">{`${p.locationShort} · ${p.period}`}</p>
           {p.slug === 'hyundai' && <CoBrand />}
         </div>
@@ -37,9 +38,9 @@ export default async function ProjectPage({ params }: Props) {
         <div className="w pjo">
           <div className="rv">
             <div className="eb">Project overview</div>
-            <h2>{p.title}</h2>
+            <h2><Hl text={p.title} /></h2>
             {p.overview.map((t, i) => (
-              <p key={i} className="lead" style={i ? { marginTop: 16 } : undefined}>{t}</p>
+              <p key={i} className="lead" style={i ? { marginTop: 16 } : undefined}><Hl text={t} /></p>
             ))}
           </div>
           <aside className="pjf rv">
