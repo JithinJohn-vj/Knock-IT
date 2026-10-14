@@ -22,7 +22,6 @@ const I = {
   cog: <><circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1" /></>,
   users: <><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></>,
   arrow: <><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></>,
-  x: <><path d="M18 6 6 18" /><path d="m6 6 12 12" /></>,
 }
 
 const HREF = '/projects/hyundai'
@@ -52,48 +51,45 @@ function Hyundai({ light }: { light?: boolean }) {
 
 export default function FeaturedProject() {
   return (
-    <div className="sec fpx">
-      <div className="w fpg">
-        <div className="fpl rv">
-          <div className="eb hye">Featured project</div>
-          <div className="fpb" role="img" aria-label="Knock-IT and Hyundai">
-            <img className="fpk" src="/images/logos/logo.jpg" alt="" />
-            <i>{svg(I.x, 22)}</i>
-            <Hyundai />
+    <div className="sec fpsec">
+      <div className="w fp1">
+        <div className="eb hye rv">Featured project</div>
+        <div className="fpc rv">
+          <div className="fpm">
+            <span className="fpp"><em>{svg(I.pin, 20)}</em><span><b>King Abdullah</b><small>Economic City, KSA</small></span></span>
+            <span className="fpp fpdt">{svg(I.calendar, 18)}<span>Jul – Sep 2024</span></span>
           </div>
+          <div className="fpn" role="img" aria-label="Knock-IT and Hyundai">
+            <img className="fpk" src="/images/logos/logoD.png" alt="" />
+            <em>{svg(I.handshake, 52)}</em>
+            <u />
+            <Hyundai light />
+          </div>
+          <p className="fpt">A stronger partnership for a smarter workspace</p>
+        </div>
+
+        <div className="fpl rv">
           <h2><Hl text="Powering Hyundai's New Office with a Stronger Network" /></h2>
-          <p className="fpd"><Hl text="We delivered a complete end-to-end networking solution for Hyundai's new office in King Abdullah Economic City, including structured cabling, fiber connectivity, server room setup and CCTV infrastructure, built for reliability and future growth." /></p>
-          <ul className="fpf">
-            {features.map((f) => (
-              <li key={f.label}><em>{svg(f.icon, 24)}</em><span>{f.label}</span></li>
-            ))}
-          </ul>
-          <div className="fpa">
-            <Link className="fpy" href={HREF}>{svg(I.handshake, 26)}<span>View Project Details</span>{svg(I.arrow, 20)}</Link>
-            <Link className="fpo" href="/projects"><span>More Projects</span>{svg(I.arrow, 20)}</Link>
+          <div className="fpbd">
+            <p className="fpd"><Hl text="We delivered a complete end-to-end networking solution for Hyundai's new office in King Abdullah Economic City, including structured cabling, fiber connectivity, server room setup and CCTV infrastructure, built for reliability and future growth." /></p>
+            <div>
+              <ul className="fpf">
+                {features.map((f) => (
+                  <li key={f.label}><em>{svg(f.icon, 24)}</em><span>{f.label}</span></li>
+                ))}
+              </ul>
+              <div className="fpa">
+                <Link className="fpy" href={HREF}>{svg(I.handshake, 26)}<span>View Project Details</span>{svg(I.arrow, 20)}</Link>
+                <Link className="fpo" href="/projects"><span>More Projects</span>{svg(I.arrow, 20)}</Link>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="fpr rv">
-          <div className="fpc">
-            <div className="fpm">
-              <span className="fpp"><em>{svg(I.pin, 20)}</em><span><b>King Abdullah</b><small>Economic City, KSA</small></span></span>
-              <span className="fpp fpdt">{svg(I.calendar, 18)}<span>Jul – Sep 2024</span></span>
-            </div>
-            <div className="fpn" role="img" aria-label="Knock-IT and Hyundai">
-              <img className="fpk" src="/images/logos/logoD.png" alt="" />
-              <em>{svg(I.handshake, 52)}</em>
-              <u />
-              <Hyundai light />
-            </div>
-            <p className="fpt">A stronger partnership for a smarter workspace</p>
-          </div>
-
-          <div className="fpq">
-            {values.map((v) => (
-              <div key={v.title}><em>{svg(v.icon, 22)}</em><span><b>{v.title}</b><small>{v.text}</small></span></div>
-            ))}
-          </div>
+        <div className="fpq rv">
+          {values.map((v) => (
+            <div key={v.title}><em>{svg(v.icon, 22)}</em><span><b>{v.title}</b><small>{v.text}</small></span></div>
+          ))}
         </div>
       </div>
     </div>
