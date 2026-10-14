@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import projects from '@/content/projects.json'
 import ProjectGallery from '@/components/ProjectGallery'
+import CoBrand from '@/components/CoBrand'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -29,6 +30,7 @@ export default async function ProjectPage({ params }: Props) {
           <div className="eb">Project</div>
           <h1>{p.title}</h1>
           <p className="lead">{`${p.locationShort} · ${p.period}`}</p>
+          {p.slug === 'hyundai' && <CoBrand />}
         </div>
       </div>
       <div className="sec">
