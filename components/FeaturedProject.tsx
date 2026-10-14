@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 import Hl from './Hl'
+import ProjectSlider from './ProjectSlider'
+import projects from '@/content/projects.json'
 
 // Home page featured project: Knock-IT x Hyundai. Icons are Lucide (ISC license).
 const svg = (d: ReactNode, size = 22) => (
@@ -25,6 +27,7 @@ const I = {
 }
 
 const HREF = '/projects/hyundai'
+const gallery = projects.find((p) => p.slug === 'hyundai')?.gallery ?? []
 
 const features = [
   { icon: I.network, label: 'Structured Network Cabling' },
@@ -54,18 +57,21 @@ export default function FeaturedProject() {
     <div className="sec fpsec">
       <div className="w fp1">
         <div className="eb hye rv">Featured project</div>
-        <div className="fpc rv">
-          <div className="fpm">
-            <span className="fpp"><em>{svg(I.pin, 20)}</em><span><b>King Abdullah</b><small>Economic City, KSA</small></span></span>
-            <span className="fpp fpdt">{svg(I.calendar, 18)}<span>Jul – Sep 2024</span></span>
+        <div className="fptop rv">
+          <div className="fpc">
+            <div className="fpm">
+              <span className="fpp"><em>{svg(I.pin, 20)}</em><span><b>King Abdullah</b><small>Economic City, KSA</small></span></span>
+              <span className="fpp fpdt">{svg(I.calendar, 18)}<span>Jul – Sep 2024</span></span>
+            </div>
+            <div className="fpn" role="img" aria-label="Knock-IT and Hyundai">
+              <img className="fpk" src="/images/logos/logoD.png" alt="" />
+              <em>{svg(I.handshake, 52)}</em>
+              <u />
+              <Hyundai light />
+            </div>
+            <p className="fpt">A stronger partnership for a smarter workspace</p>
           </div>
-          <div className="fpn" role="img" aria-label="Knock-IT and Hyundai">
-            <img className="fpk" src="/images/logos/logoD.png" alt="" />
-            <em>{svg(I.handshake, 52)}</em>
-            <u />
-            <Hyundai light />
-          </div>
-          <p className="fpt">A stronger partnership for a smarter workspace</p>
+          <ProjectSlider photos={gallery} />
         </div>
 
         <div className="fpl rv">
