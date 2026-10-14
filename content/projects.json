@@ -1,27 +1,27 @@
 [
  {
   "slug": "hyundai",
-  "title": "Hyundai new office networking",
+  "title": "Enterprise network infrastructure",
   "tag": "Network cabling",
-  "location": "Jeddah, Saudi Arabia",
-  "locationShort": "Jeddah",
+  "location": "King Abdullah Economic City, Sabar, Jeddah",
+  "locationShort": "King Abdullah Economic City",
   "period": "July to September 2024",
   "dates": "31 July to 5 September 2024",
   "summary": "LAN and fiber cabling, two server rooms and CCTV for a new office building.",
   "cardImage": "/images/rack.jpg",
   "heroImage": "/images/rack.jpg",
   "overview": [
-   "Knock-IT delivered the network cabling for Hyundai's new office in Jeddah. Over five weeks, from 31 July to 5 September 2024, the team surveyed and traced cable routes, pulled LAN and fiber cabling across the building, installed CCTV and cabinets in two IT rooms, and labeled and tested every line before handover.",
+   "Knock-IT delivered the network cabling for Hyundai's new office in King Abdullah Economic City, Sabar, Jeddah. Over five weeks, from 31 July to 5 September 2024, the team surveyed and traced cable routes, pulled LAN and fiber cabling across the building, installed CCTV and cabinets in two IT rooms, and labeled and tested every line before handover.",
    "Part of the work served the building's own infrastructure, including the lift lobby, cafe and meeting room cabling, fiber from the 2nd to the 6th floor and a 24-line cable pull over three days. The Hyundai office work covered cabinet installation, termination, STC fiber from B1 to the 7th floor, cabling for IT rooms 1 and 2, labeling, testing and CCTV."
   ],
   "facts": [
    {
     "label": "Project",
-    "value": "Hyundai new office networking"
+    "value": "Enterprise network infrastructure"
    },
    {
     "label": "Location",
-    "value": "Jeddah, Saudi Arabia"
+    "value": "King Abdullah Economic City, Sabar, Jeddah"
    },
    {
     "label": "Duration",
