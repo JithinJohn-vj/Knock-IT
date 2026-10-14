@@ -1050,3 +1050,5 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .kfe{margin:0 0 16px}.kfg{align-items:start}.kfl .fpc{margin-top:0}
 .kfr .kff{margin:0;padding:16px 10px;border:1px solid var(--gr);border-radius:18px;background:#fff;box-shadow:0 12px 28px #0b1a3312}.kfr .kff li{justify-content:center}.kfr .kff li:first-child{padding-inline-start:10px}
 @media(max-width:560px){.kfr .kff{padding:16px}.kfr .kff li{justify-content:flex-start}.kfr .kff li:first-child{padding-inline-start:0}}
+.kfl .fpm{flex-wrap:nowrap;gap:8px}.kfl .fpp{gap:7px;padding:3px 12px 3px 3px}[dir=rtl] .kfl .fpp{padding:3px 3px 3px 12px}.kfl .fpp em{width:clamp(22px,2vw,28px);height:clamp(22px,2vw,28px)}.kfl .fpp svg{width:clamp(12px,1.1vw,15px);height:clamp(12px,1.1vw,15px)}
+.kfl .fpp b{font-size:clamp(10px,.85vw,12px);line-height:1.25}.kfl .fpp small{font-size:clamp(9px,.75vw,10.5px);line-height:1.25}.kfl .fpdt{padding:5px 12px;font-size:clamp(10px,.85vw,12px)}[dir=rtl] .kfl .fpdt{padding:5px 12px}
