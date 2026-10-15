@@ -103,7 +103,6 @@
   "Dot matrix printers": "طابعات النقطة",
   "Printing Consumables": "مستلزمات الطباعة",
   "Ink and toner cartridges": "خراطيش الحبر والتونر",
-  "PQ Perfect Quality compatible cartridges": "خراطيش PQ المتوافقة عالية الجودة",
   "Printer ribbons": "أشرطة الطابعات",
   "Paper": "الورق",
   "Office Stationery and Papers": "القرطاسية والورق المكتبي",
@@ -141,7 +140,6 @@
   "Selling and distribution of IT systems": "بيع وتوزيع أنظمة تقنية المعلومات",
   "Selling and distribution of consumables": "بيع وتوزيع المستهلكات",
   "Managed Print Services (MPS)": "خدمات الطباعة المُدارة (MPS)",
-  "We produce PQ (Perfect Quality) ink and toner cartridges, compatible with all types of printers on the market.": "ننتج خراطيش الحبر والتونر PQ (Perfect Quality) المتوافقة مع جميع أنواع الطابعات في السوق.",
   "Also supplying": "نوفر أيضاً",
   "Corporate gifts": "الهدايا المؤسسية",
   "Packaging and pre-printing": "التغليف وما قبل الطباعة",
@@ -561,7 +559,9 @@
   "To be a leading IT solutions provider in Saudi Arabia, known for trust, quality and customer satisfaction.": "أن نكون مزوداً رائداً لحلول تقنية المعلومات في المملكة العربية السعودية، معروفاً بالثقة والجودة ورضا العملاء.",
   "Our Values": "قيمنا",
   "Integrity, customer focus, quality service and long-term partnerships.": "النزاهة والتركيز على العميل والخدمة عالية الجودة والشراكات طويلة الأمد.",
-  "A dedicated team supporting your business.": "فريق متفانٍ يدعم أعمالك."
+  "A dedicated team supporting your business.": "فريق متفانٍ يدعم أعمالك.",
+  "SmartLink premium toner cartridges": "خراطيش تونر SmartLink الممتازة",
+  "We supply SmartLink premium toner cartridges, compatible with all major printer brands.": "نوفّر خراطيش تونر SmartLink الممتازة المتوافقة مع جميع العلامات التجارية الرئيسية للطابعات."
  },
  "MON": {
   "Jan": "يناير",
