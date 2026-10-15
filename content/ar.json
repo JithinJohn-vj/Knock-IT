@@ -525,7 +525,12 @@
   "Bulk cable pull into the data room": "سحب حزم الكابلات إلى غرفة البيانات",
   "Cable routing through the cafeteria ceiling": "تمديد الكابلات عبر سقف الكافتيريا",
   "Pulling cable bundles into the lobby ceiling": "سحب حزم الكابلات إلى سقف الردهة",
-  "LAN cabling in the conference room": "تمديد كابلات الشبكة في قاعة المؤتمرات"
+  "LAN cabling in the conference room": "تمديد كابلات الشبكة في قاعة المؤتمرات",
+  "Underfloor cable runs along the office corridor": "تمديد الكابلات تحت الأرضية على طول ممر المكاتب",
+  "Pulling cable through the office ceiling": "سحب الكابل عبر سقف المكتب",
+  "Ceiling work in the reception corridor": "أعمال السقف في ممر الاستقبال",
+  "Terminating and testing workstation outlets": "إنهاء وفحص منافذ محطات العمل",
+  "Preparing floor boxes under the carpet tiles": "تجهيز صناديق الأرضية تحت بلاط السجاد"
  },
  "MON": {
   "Jan": "يناير",

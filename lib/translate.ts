@@ -2,6 +2,9 @@
 // Translations are exact text-node matches, so all copy stays in one dictionary file.
 type Dict = Record<string, string>
 const ORIG = new WeakMap<Node, string>()
+// The Arabic text we wrote into each node, to tell our own writes apart from new
+// English text React puts into an already-translated node (e.g. a gallery caption).
+const TR = new WeakMap<Node, string>()
 
 function trs(s: string, dict: Dict, mon: Dict): string | null {
   const n = s.replace(/\s+/g, ' ').trim()
@@ -14,12 +17,19 @@ function trs(s: string, dict: Dict, mon: Dict): string | null {
 
 function trNode(n: Node, dict: Dict, mon: Dict) {
   const p = n.parentNode as HTMLElement | null
-  if (!p || /^(SCRIPT|STYLE|TEXTAREA)$/.test(p.nodeName) || ORIG.has(n)) return
+  if (!p || /^(SCRIPT|STYLE|TEXTAREA)$/.test(p.nodeName)) return
   const s = n.nodeValue ?? ''
+  if (ORIG.has(n)) {
+    if (s === TR.get(n)) return
+    ORIG.delete(n)
+    TR.delete(n)
+  }
   const r = trs(s, dict, mon)
   if (r != null) {
+    const v = (s.match(/^\s*/) as RegExpMatchArray)[0] + r + (s.match(/\s*$/) as RegExpMatchArray)[0]
     ORIG.set(n, s)
-    n.nodeValue = (s.match(/^\s*/) as RegExpMatchArray)[0] + r + (s.match(/\s*$/) as RegExpMatchArray)[0]
+    TR.set(n, v)
+    n.nodeValue = v
   }
 }
 
@@ -54,8 +64,10 @@ export function restoreEnglish() {
   while ((n = w.nextNode())) a.push(n)
   a.forEach((x) => {
     if (ORIG.has(x)) {
-      x.nodeValue = ORIG.get(x) as string
+      // Only restore text we translated; leave newer text React has written since.
+      if (x.nodeValue === TR.get(x)) x.nodeValue = ORIG.get(x) as string
       ORIG.delete(x)
+      TR.delete(x)
     }
   })
   document.querySelectorAll('[data-enph]').forEach((e) => {
