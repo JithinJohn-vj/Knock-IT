@@ -530,7 +530,12 @@
   "Pulling cable through the office ceiling": "سحب الكابل عبر سقف المكتب",
   "Ceiling work in the reception corridor": "أعمال السقف في ممر الاستقبال",
   "Terminating and testing workstation outlets": "إنهاء وفحص منافذ محطات العمل",
-  "Preparing floor boxes under the carpet tiles": "تجهيز صناديق الأرضية تحت بلاط السجاد"
+  "Preparing floor boxes under the carpet tiles": "تجهيز صناديق الأرضية تحت بلاط السجاد",
+  "Feeding cable bundles into the corridor ceiling": "إدخال حزم الكابلات إلى سقف الممر",
+  "Cable bundles rising to the ceiling access hatch": "حزم الكابلات الصاعدة إلى فتحة السقف",
+  "Planning the cable route with the team": "تخطيط مسار الكابلات مع الفريق",
+  "Installing cabling at a ceiling access point": "تمديد الكابلات عند فتحة السقف",
+  "Floor box terminations under the raised floor": "توصيلات صناديق الأرضية تحت الأرضية المرتفعة"
  },
  "MON": {
   "Jan": "يناير",
