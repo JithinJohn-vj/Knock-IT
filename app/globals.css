@@ -1083,3 +1083,4 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .abhg{padding-top:calc(var(--hh,72px) + 48px)}@media(max-width:560px){.abhg{padding-top:calc(var(--hh,72px) + 32px)}}
 .absl h2{font-size:clamp(28px,2.5vw,40px)}
 .ctbn{display:block;width:100%;height:auto;margin-top:22px;border-radius:22px;box-shadow:0 22px 50px #0b1a3326}@media(max-width:560px){.ctbn{border-radius:14px;margin-top:16px}}
+.cgl figure:first-child{grid-row:span 2;height:534px}.cgl figure:first-child figcaption{display:none}@media(max-width:820px){.cgl figure:first-child{grid-row:auto;height:auto;aspect-ratio:3/2}}
