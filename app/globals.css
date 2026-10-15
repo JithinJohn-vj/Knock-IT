@@ -1082,3 +1082,4 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 @media(max-width:560px){.abhg{padding-top:40px;padding-bottom:40px;gap:28px}.abhs{grid-template-columns:1fr}.abhs li:nth-child(n+2){border-top:1px solid #ffffff1f}.abhs em{width:44px;height:44px}.abhs b{font-size:22px}.abha>a{flex:1 1 100%;justify-content:center}.abft ul{grid-template-columns:1fr;row-gap:18px}.abft li{padding:0}.abft li+li{border:0}.absm>div{padding:16px}.absm em,.abft em{width:48px;height:48px}}
 .abhg{padding-top:calc(var(--hh,72px) + 48px)}@media(max-width:560px){.abhg{padding-top:calc(var(--hh,72px) + 32px)}}
 .absl h2{font-size:clamp(28px,2.5vw,40px)}
+.ctbn{display:block;width:100%;height:auto;margin-top:22px;border-radius:22px;box-shadow:0 22px 50px #0b1a3326}@media(max-width:560px){.ctbn{border-radius:14px;margin-top:16px}}
