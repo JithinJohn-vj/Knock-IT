@@ -535,7 +535,12 @@
   "Cable bundles rising to the ceiling access hatch": "حزم الكابلات الصاعدة إلى فتحة السقف",
   "Planning the cable route with the team": "تخطيط مسار الكابلات مع الفريق",
   "Installing cabling at a ceiling access point": "تمديد الكابلات عند فتحة السقف",
-  "Floor box terminations under the raised floor": "توصيلات صناديق الأرضية تحت الأرضية المرتفعة"
+  "Floor box terminations under the raised floor": "توصيلات صناديق الأرضية تحت الأرضية المرتفعة",
+  "Cable bundle dropped into the data room corridor": "حزمة الكابلات النازلة إلى ممر غرفة البيانات",
+  "Rack frame with incoming cable bundles": "هيكل الرف مع حزم الكابلات الواردة",
+  "Fitting and patching the network cabinet": "تركيب وتوصيل كابينة الشبكة",
+  "Pulling blue LAN cable into the office ceiling": "سحب كابلات الشبكة الزرقاء إلى سقف المكتب",
+  "Main equipment room walkthrough with the client team": "جولة في غرفة المعدات الرئيسية مع فريق العميل"
  },
  "MON": {
   "Jan": "يناير",
