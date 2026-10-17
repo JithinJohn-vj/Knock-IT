@@ -572,7 +572,13 @@
   "On-time Delivery": "تسليم في الموعد",
   "Dedicated Support": "دعم مخصص",
   "Ceiling cabling": "تمديد الكابلات في السقف",
-  "Pulling LAN cable through the office ceiling": "سحب كابلات الشبكة عبر سقف المكتب"
+  "Pulling LAN cable through the office ceiling": "سحب كابلات الشبكة عبر سقف المكتب",
+  "Floor box cabling": "تمديد كابلات صناديق الأرضية",
+  "Running cables under the raised floor": "تمديد الكابلات تحت الأرضية المرتفعة",
+  "Cable pulls to the IT room": "سحب الكابلات إلى غرفة التقنية",
+  "Bundled cable runs into the data room": "حزم كابلات ممتدة إلى غرفة البيانات",
+  "Rack patching & testing": "توصيل الراك وفحصه",
+  "Patching and verifying every port": "توصيل كل منفذ والتحقق منه"
  },
  "MON": {
   "Jan": "يناير",

@@ -37,11 +37,11 @@ const perks = [
 ]
 
 const slides = [
-  { image: '/images/cab.jpg', title: 'Cabinet fitting', text: 'Professional rack installation' },
-  { image: '/images/lad.jpg', title: 'Cabling on site', text: 'Running and organizing network cables' },
-  { image: '/images/mess.jpg', title: 'Termination & routing', text: 'Cable termination and neat routing' },
-  { image: '/images/rack.jpg', title: 'Rack complete', text: 'Clean and organized setup' },
-  { image: '/images/projects/hyundai/site-19.webp', title: 'Ceiling cabling', text: 'Pulling LAN cable through the office ceiling' },
+  { image: '/images/team-1.webp', title: 'Floor box cabling', text: 'Running cables under the raised floor' },
+  { image: '/images/team-2.webp', title: 'Cabling on site', text: 'Running and organizing network cables' },
+  { image: '/images/team-3.webp', title: 'Ceiling cabling', text: 'Pulling LAN cable through the office ceiling' },
+  { image: '/images/team-4.webp', title: 'Cable pulls to the IT room', text: 'Bundled cable runs into the data room' },
+  { image: '/images/team-5.webp', title: 'Rack patching & testing', text: 'Patching and verifying every port' },
 ]
 
 const pad = (n: number) => String(n).padStart(2, '0')
