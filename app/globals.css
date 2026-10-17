@@ -1330,3 +1330,4 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .sgt{grid-template-columns:repeat(2,1fr);row-gap:10px}
 .sgt b{font-size:15px}
 }
+.w{max-width:1360px}.sd .w{max-width:1360px}
