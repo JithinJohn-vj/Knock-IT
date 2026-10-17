@@ -1194,3 +1194,4 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .pnx .lw img{height:34px;max-width:140px;opacity:.85;filter:brightness(0) invert(1)}.pnx .lw img:hover{opacity:1}
 .pnl-canon img{height:auto;width:150px;max-width:150px}@media(max-width:560px){.pnl-canon img{width:118px}}
 .pnl-lexmark img{height:auto;width:160px;max-width:160px}@media(max-width:560px){.pnl-lexmark img{width:124px}}
+.pnx .lw img{width:140px!important;height:44px!important;max-width:none!important;max-height:none!important;object-fit:contain}@media(max-width:560px){.pnx .lw img{width:104px!important;height:34px!important}}
