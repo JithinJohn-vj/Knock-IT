@@ -22,17 +22,13 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z]/g, '')
 export default function Partners() {
   const n = partners.length
   const [i, setI] = useState(0)
-  const [paused, setPaused] = useState(false)
   const go = (x: number) => setI(((x % n) + n) % n)
 
+  // Always auto-advance; a manual move restarts the countdown because it changes i.
   useEffect(() => {
-    if (matchMedia('(prefers-reduced-motion:reduce)').matches) setPaused(true)
-  }, [])
-  useEffect(() => {
-    if (paused) return
     const t = setTimeout(() => setI((i + 1) % n), 4000)
     return () => clearTimeout(t)
-  }, [i, n, paused])
+  }, [i, n])
 
   return (
     <>
@@ -41,7 +37,7 @@ export default function Partners() {
           <li key={p.label}>{svg(p.icon, 30, 1.6)}<span>{p.label}</span></li>
         ))}
       </ul>
-      <div className="pnc rv" dir="ltr" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+      <div className="pnc rv" dir="ltr">
         <div className="pnt" aria-roledescription="carousel" aria-label="Our partners">
           {partners.map((p, k) => {
             // Signed distance from the active card, wrapped so cards sit on both sides.
