@@ -1157,3 +1157,8 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .sxs #sx .sxi{z-index:1}
 .sxs #sx .sxc{left:4%;right:4%;bottom:4%}
 }
+.czx{background:linear-gradient(120deg,#07142e 0%,#0a1f4a 55%,#0d2a66 100%)!important}
+.czx .cze{color:#cfdcf5}.czx .czl h2{color:#fff}.czx .czl h2 strong{color:#fff}.czx .czl>p{color:#c5d0e6}
+.czx .czk>div{border-color:#ffffff26}.czx .czk i{background:#ffffff14;color:var(--y)}.czx .czk span{color:#fff}
+.czx .czf>div{border-color:#ffffff26;color:var(--y)}.czx .czf span{color:#d5dfef}
+.czx .czy{box-shadow:0 14px 30px #0006}
