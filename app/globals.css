@@ -1346,3 +1346,8 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .sgfa{top:20%}.sgfb{top:34%}.sgfc{top:48%}.sgfd{top:61%}
 @media(max-width:1100px){.sgp{min-height:500px}}
 @media(max-width:640px){.sgp{min-height:540px}.sgfa{top:22%}.sgfb{top:34%}.sgfc{top:46%}.sgfd{top:57%}}
+/* Solutions panel: show the whole photo, navy fills the rest */
+.sgp{background:radial-gradient(80% 50% at 50% 45%,#1a3f8f,#0a1838 75%)}
+.sgp>img{object-fit:contain;object-position:50% 46%;filter:saturate(1.05) brightness(1) contrast(1.05)}
+.sgo{background:radial-gradient(40% 26% at 74% 46%,#f2c31240,transparent 72%),linear-gradient(180deg,#0b1a3399 0%,transparent 22%,transparent 72%,#0b1a33b3 100%)}
+.sgo::after{opacity:.22}
