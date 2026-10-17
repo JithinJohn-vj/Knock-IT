@@ -1331,3 +1331,18 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .sgt b{font-size:15px}
 }
 .w{max-width:1360px}.sd .w{max-width:1360px}
+/* Solutions: shorter cards and panel */
+.sgc{gap:8px}
+.sgk{padding:9px 12px 9px 10px;gap:11px;align-items:center}
+.sgi{width:34px;height:34px;border-radius:9px}.sgi svg{width:18px;height:18px}
+.sgb{gap:1px}
+.sgb b{font-size:13.5px}
+.sgd{font-size:12px;line-height:1.4}
+.sga{margin-top:0;align-self:center}
+.sgh h2{margin:10px 0 14px}
+.sgh p{margin-bottom:16px}
+.sgp{min-height:440px}
+.sgs{top:30px}.sgs span:first-child{font-size:28px}.sgs span:last-child{font-size:32px}
+.sgfa{top:20%}.sgfb{top:34%}.sgfc{top:48%}.sgfd{top:61%}
+@media(max-width:1100px){.sgp{min-height:500px}}
+@media(max-width:640px){.sgp{min-height:540px}.sgfa{top:22%}.sgfb{top:34%}.sgfc{top:46%}.sgfd{top:57%}}
