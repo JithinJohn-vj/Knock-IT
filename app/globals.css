@@ -1293,3 +1293,40 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .sgfa{top:23%;right:4%}.sgfb{top:35%;left:4%}.sgfc{top:47%;right:4%}.sgfd{top:59%;left:4%}
 }
 .sgh h2{margin-bottom:24px}
+/* Solutions: compact sizing */
+.sgx.sec{padding:52px 0}
+.sgg{gap:30px}
+.sge{font-size:11.5px;padding:5px 12px 5px 9px}.sge i{font-size:14px}
+.sgh h2{font-size:clamp(24px,2.5vw,34px);margin:12px 0 18px}
+.sgh p{font-size:14px;line-height:1.6;margin-bottom:20px}
+.sgc{gap:10px}
+.sgk{gap:12px;padding:12px 12px 12px 12px;border-radius:13px}
+.sgk.top{border-width:1.5px}
+.sgi{width:38px;height:38px;border-radius:10px}.sgi svg{width:20px;height:20px}
+.sgb{gap:3px}
+.sgn small{font-size:10.5px;padding:1px 6px;border-radius:6px}
+.sgn mark{font-size:9.5px;padding:2px 7px}
+.sgb b{font-size:14px;line-height:1.3}
+.sgd{font-size:12.5px;line-height:1.45}
+.sga{margin-top:16px}.sga svg{width:15px;height:15px}
+.sgp{min-height:500px;border-radius:24px;border-top-left-radius:70px}
+.sgs{left:28px;top:40px}.sgs span:first-child{font-size:32px}.sgs span:last-child{font-size:36px}
+.sgf li{font-size:12.5px;padding:8px 12px 8px 8px;gap:9px;border-radius:12px;max-width:160px}
+.sgf li em{width:32px;height:32px}.sgf li em svg{width:17px;height:17px}
+.sgfa{top:22%;right:6%}.sgfb{top:36%;left:6%}.sgfc{top:50%;right:5%}.sgfd{top:63%;left:7%}
+.sgt{left:12px;right:12px;bottom:12px;padding:12px 4px;border-radius:16px}
+.sgt li{gap:3px}.sgt svg{width:20px;height:20px}
+.sgt b{font-size:16px}.sgt span{font-size:10.5px}
+@media(max-width:1100px){.sgp{min-height:540px}}
+@media(max-width:640px){
+.sgx.sec{padding:40px 0}
+.sgh h2{font-size:22px}
+.sgk{padding:11px;gap:10px}
+.sgb b{font-size:14px}.sgd{font-size:12px}
+.sgp{min-height:560px;border-top-left-radius:50px}
+.sgs span:first-child{font-size:28px}.sgs span:last-child{font-size:31px}
+.sgf li{font-size:11.5px;max-width:140px}
+.sgfa{top:22%;right:4%}.sgfb{top:34%;left:4%}.sgfc{top:46%;right:4%}.sgfd{top:57%;left:4%}
+.sgt{grid-template-columns:repeat(2,1fr);row-gap:10px}
+.sgt b{font-size:15px}
+}
