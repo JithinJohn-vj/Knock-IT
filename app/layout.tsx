@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Cairo:wght@400;700&family=Caveat:wght@700&display=swap" rel="stylesheet" />
       </head>
       <body>
         <LangProvider>
