@@ -11,7 +11,14 @@ import site from '@/content/site.json'
 export const metadata: Metadata = {
   title: site.title,
   description: 'Knock-IT Solution & Service: IT infrastructure, networking, security and hardware in Jeddah and across Saudi Arabia.',
-  icons: { icon: '/images/logos/logo.jpg' },
+  // Transparent tab icons; white "iT" on dark browser themes so it stays visible.
+  icons: {
+    icon: [
+      { url: '/images/logos/favicon.png', type: 'image/png', media: '(prefers-color-scheme: light)' },
+      { url: '/images/logos/favicon-dark.png', type: 'image/png', media: '(prefers-color-scheme: dark)' },
+    ],
+    apple: '/images/logos/favicon.png',
+  },
 }
 
 export const viewport: Viewport = {
