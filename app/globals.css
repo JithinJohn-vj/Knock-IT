@@ -1191,3 +1191,4 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 @media(max-width:560px){.pnl img{height:40px;max-width:118px}.pnl-samsung img{height:22px}.pnl-epson img{height:26px}.pnq{--step:118px}.pnq:not(.on){opacity:.3}.pnq:not(.on) .pnf{visibility:hidden}.pnq:not(.on) .pnf{visibility:visible}.pnq:not(.on) .pnf>*{opacity:0}}
 .pnl-samsung img,.pnl-epson img{filter:none}.pnl-hp img{height:64px}.pnl-samsung img{height:auto;width:150px;max-width:150px}.pnl-epson img{height:auto;width:132px;max-width:132px}
 @media(max-width:560px){.pnl-hp img{height:46px}.pnl-samsung img{width:118px}.pnl-epson img{width:104px}}
+.pnx .lw img{height:34px;max-width:140px;opacity:.85;filter:brightness(0) invert(1)}.pnx .lw img:hover{opacity:1}
