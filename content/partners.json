@@ -1,6 +1,6 @@
 [
  {
-  "logo": "/images/logos/l_hp.svg",
+  "logo": "/images/logos/partner-hp.svg",
   "name": "HP",
   "level": "Gold Partner"
  },
@@ -15,12 +15,12 @@
   "level": "Premium Partner"
  },
  {
-  "logo": "/images/logos/l_samsung.svg",
+  "logo": "/images/logos/partner-samsung.svg",
   "name": "Samsung",
   "level": "Silver Partner"
  },
  {
-  "logo": "/images/logos/l_epson.svg",
+  "logo": "/images/logos/partner-epson.svg",
   "name": "Epson",
   "level": "Authorized Reseller"
  },
