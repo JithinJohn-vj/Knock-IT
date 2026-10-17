@@ -578,7 +578,9 @@
   "Cable pulls to the IT room": "سحب الكابلات إلى غرفة التقنية",
   "Bundled cable runs into the data room": "حزم كابلات ممتدة إلى غرفة البيانات",
   "Rack patching & testing": "توصيل الراك وفحصه",
-  "Patching and verifying every port": "توصيل كل منفذ والتحقق منه"
+  "Patching and verifying every port": "توصيل كل منفذ والتحقق منه",
+  "Everything your IT needs, from": "كل ما تحتاجه تقنية المعلومات لديك، من",
+  "one partner.": "شريك واحد."
  },
  "MON": {
   "Jan": "يناير",
