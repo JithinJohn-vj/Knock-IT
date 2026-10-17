@@ -1195,3 +1195,12 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .pnl-canon img{height:auto;width:150px;max-width:150px}@media(max-width:560px){.pnl-canon img{width:118px}}
 .pnl-lexmark img{height:auto;width:160px;max-width:160px}@media(max-width:560px){.pnl-lexmark img{width:124px}}
 .pnx .lw img{width:140px!important;height:44px!important;max-width:none!important;max-height:none!important;object-fit:contain}@media(max-width:560px){.pnx .lw img{width:104px!important;height:34px!important}}
+/* Partner level badge: one line, icon + label in a tinted pill */
+.pnf small.pnv{display:inline-flex;align-items:center;gap:6px;max-width:none;white-space:nowrap;padding:5px 10px 5px 8px;border:1px solid #ffffff2e;border-radius:999px;background:#ffffff12;font-size:10.5px;font-weight:700;letter-spacing:.05em;line-height:1.2}
+.pnv svg{flex:none}
+.pnv-gold{color:#ffd76a!important;border-color:#f2c31266!important;background:#f2c3121f!important}
+.pnv-silver{color:#e3e9f2!important;border-color:#c9d2df66!important;background:#c9d2df1f!important}
+.pnv-premium{color:#d9b8ff!important;border-color:#b98bff66!important;background:#9b5cff24!important}
+.pnv-auth{color:#9fd0ff!important;border-color:#5fb0ff66!important;background:#2f8cff24!important}
+@media(max-width:900px){.pnf small.pnv{font-size:9.5px;gap:5px;padding:4px 8px 4px 6px;letter-spacing:.03em}.pnv svg{width:13px;height:13px}}
+@media(max-width:560px){.pnf{padding-left:8px;padding-right:8px}.pnf small.pnv{font-size:8.5px;gap:4px;padding:4px 7px 4px 5px;letter-spacing:.02em}.pnv svg{width:12px;height:12px}}

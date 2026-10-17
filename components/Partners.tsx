@@ -17,6 +17,14 @@ const perks = [
   { label: 'Proven Reliability', icon: <><path d="M6 3h12l4 6-10 13L2 9Z" /><path d="M11 3 8 9l4 13 4-13-3-6" /><path d="M2 9h20" /></> },
 ]
 
+// Badge icon and tint for each partnership level.
+const levels: Record<string, { k: string; icon: ReactNode }> = {
+  'Gold Partner': { k: 'gold', icon: <><circle cx="12" cy="8" r="6" /><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></> },
+  'Silver Partner': { k: 'silver', icon: <><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /></> },
+  'Premium Partner': { k: 'premium', icon: <><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" /><path d="M5 21h14" /></> },
+  'Authorized Reseller': { k: 'auth', icon: <><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></> },
+}
+
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z]/g, '')
 
 export default function Partners() {
@@ -54,7 +62,7 @@ export default function Partners() {
                   <span className={'pnl pnl-' + slug(p.name)}>
                     {p.logo ? <img loading="lazy" decoding="async" src={p.logo} alt={p.name} /> : <b>{p.name === 'Lexmark' && <i aria-hidden="true" />}{p.name.toLowerCase() === 'brother' ? 'brother' : p.name}</b>}
                   </span>
-                  <small>{p.level}</small>
+                  <small className={'pnv pnv-' + (levels[p.level]?.k ?? 'auth')}>{svg((levels[p.level] ?? levels['Authorized Reseller']).icon, 15, 2)}<span>{p.level}</span></small>
                   {svg(<path d="m9 18 6-6-6-6" />, 18, 2.2)}
                 </div>
               </div>
