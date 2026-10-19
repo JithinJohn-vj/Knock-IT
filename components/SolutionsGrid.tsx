@@ -1,5 +1,6 @@
+'use client'
 import Link from 'next/link'
-import type { ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import data from '@/content/solutions.json'
 
 // Home "Solutions": numbered solution cards on the left, server-room showcase panel on the right.
@@ -33,6 +34,18 @@ const blurbs = [
   'Quality hardware and cost-effective print management.',
 ]
 
+// Panel photo for each solution, same order as content/solutions.json.
+const photos = [
+  { src: '/images/racks.jpg', alt: 'Patched network rack' },
+  { src: '/images/net.jpg', alt: 'Engineer monitoring a data center' },
+  { src: '/images/cctv.jpg', alt: 'CCTV cameras and recorder' },
+  { src: '/images/servroom.jpg', alt: 'Business servers' },
+  { src: '/images/storsrv.jpg', alt: 'Storage and backup systems' },
+  { src: '/images/commmain.jpg', alt: 'IP phones and headsets' },
+  { src: '/images/plan.jpg', alt: 'Consultants planning a project', fill: true },
+  { src: '/images/hwslide.jpg', alt: 'Office computers and printers' },
+]
+
 const chips = [
   { k: 'a', icon: I.shield, label: 'Secure Solutions' },
   { k: 'b', icon: I.cloud, label: 'Reliable Infrastructure' },
@@ -51,8 +64,18 @@ const { solutions } = data
 const n = solutions.length
 
 export default function SolutionsGrid() {
+  const [cur, setCur] = useState(0)
+  const [hover, setHover] = useState(false)
+
+  // Cycle through the solutions; hovering the section pauses it.
+  useEffect(() => {
+    if (hover || matchMedia('(prefers-reduced-motion:reduce)').matches) return
+    const t = setTimeout(() => setCur((c) => (c + 1) % n), 5000)
+    return () => clearTimeout(t)
+  }, [cur, hover])
+
   return (
-    <div className="sec sgx">
+    <div className="sec sgx" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
       <div className="w sgg">
         <div className="sgl">
           <div className="sgh rv">
@@ -62,7 +85,7 @@ export default function SolutionsGrid() {
           </div>
           <div className="sgc rv">
             {solutions.map((x, k) => (
-              <Link key={x.title} className={'sgk sgk' + k + (k === 0 ? ' top' : '')} href={k === n - 1 ? '/products' : `/solutions?hl=${k}`}>
+              <Link key={x.title} className={'sgk sgk' + k + (k === cur ? ' top' : '')} href={k === n - 1 ? '/products' : `/solutions?hl=${k}`} onMouseEnter={() => setCur(k)} onFocus={() => setCur(k)}>
                 <em className="sgi" dangerouslySetInnerHTML={{ __html: x.icon }} />
                 <span className="sgb">
                   <span className="sgn"><small>0{k + 1}</small>{k === 0 && <mark>Most Popular</mark>}</span>
@@ -76,7 +99,11 @@ export default function SolutionsGrid() {
         </div>
 
         <div className="sgp rv">
-          <img loading="lazy" decoding="async" src="/images/racks.jpg" alt="Server racks in a data room" />
+          <div className="sgm">
+            {photos.map((ph, k) => (
+              <img key={ph.src} loading="lazy" decoding="async" src={ph.src} alt={k === cur ? ph.alt : ''} aria-hidden={k !== cur} className={(k === cur ? 'on' : '') + (ph.fill ? ' fill' : '')} />
+            ))}
+          </div>
           <i className="sgo" aria-hidden="true" />
           <div className="sgs" aria-hidden="true"><span>Your IT</span><span>Our Priority</span></div>
           <ul className="sgf">

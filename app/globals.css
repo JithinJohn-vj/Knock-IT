@@ -1351,3 +1351,9 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .sgp>img{object-fit:contain;object-position:50% 46%;filter:saturate(1.05) brightness(1) contrast(1.05)}
 .sgo{background:radial-gradient(40% 26% at 74% 46%,#f2c31240,transparent 72%),linear-gradient(180deg,#0b1a3399 0%,transparent 22%,transparent 72%,#0b1a33b3 100%)}
 .sgo::after{opacity:.22}
+/* Solutions panel: one photo per solution, cross-fading in a band between the title and the stats */
+.sgm{position:absolute;left:0;right:0;top:25%;bottom:21%;z-index:0}
+.sgm img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .6s}
+.sgm img.on{opacity:1}
+.sgm img.fill{object-fit:cover}
+.sgk.top{transition:border-color .25s,box-shadow .25s,transform .25s}
